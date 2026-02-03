@@ -406,6 +406,78 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Official Reports Section */}
+      <section className="py-12 px-4 border-b border-gray-800 bg-gradient-to-b from-blue-950/30 to-transparent">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-2xl font-bold text-center mb-2">Official Fraud Reports</h2>
+          <p className="text-center text-gray-400 mb-8">This scam has been officially reported to cybersecurity authorities</p>
+          
+          <div className="card p-6 rounded-xl border-2 border-blue-500 bg-blue-950/20">
+            <div className="flex items-center justify-center gap-3 mb-4">
+              <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+              </div>
+              <div>
+                <h3 className="text-xl font-bold text-blue-400">Netcraft Incident Response</h3>
+                <p className="text-gray-400 text-sm">Official Cybersecurity Report</p>
+              </div>
+            </div>
+            
+            <div className="bg-black/30 rounded-lg p-4 mb-4">
+              <div className="grid md:grid-cols-2 gap-4 text-sm">
+                <div>
+                  <span className="text-gray-500">Report ID:</span>
+                  <p className="font-mono text-blue-300">f2f3oteicz4yrmh2qenr54</p>
+                </div>
+                <div>
+                  <span className="text-gray-500">Status:</span>
+                  <p className="text-green-400 font-semibold">Reported & Under Review</p>
+                </div>
+                <div>
+                  <span className="text-gray-500">Reported Domain:</span>
+                  <p className="text-red-400 font-mono">oxycapitalsltd.com</p>
+                </div>
+                <div>
+                  <span className="text-gray-500">Category:</span>
+                  <p className="text-yellow-400">Cryptocurrency Fraud / Phishing</p>
+                </div>
+              </div>
+            </div>
+            
+            <div className="text-center">
+              <a 
+                href="https://incident.netcraft.com/reports/f2f3oteicz4yrmh2qenr54" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg transition-colors"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+                View Official Netcraft Report
+              </a>
+            </div>
+            
+            <div className="mt-6 pt-4 border-t border-gray-700">
+              <h4 className="text-sm font-semibold text-gray-300 mb-2">About Netcraft</h4>
+              <p className="text-gray-400 text-sm">
+                Netcraft is a leading cybersecurity company that has been protecting the internet since 1995. 
+                They provide anti-fraud and anti-phishing services to major banks, governments, and enterprises worldwide. 
+                Their Incident Response system is used globally to report and take down malicious websites.
+              </p>
+            </div>
+          </div>
+          
+          <div className="mt-6 text-center">
+            <p className="text-gray-500 text-sm">
+              This official report helps prevent others from being scammed and supports takedown efforts.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Warning Banner */}
       <section className="py-8 px-4 border-b border-gray-800 bg-red-950/40">
         <div className="max-w-4xl mx-auto">
