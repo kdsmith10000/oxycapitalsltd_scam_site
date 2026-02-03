@@ -427,12 +427,23 @@ export default function Home() {
             </div>
             
             <div className="card p-6 rounded-xl">
-              <h3 className="text-lg font-semibold mb-2 text-blue-400">3. Document Everything</h3>
+              <h3 className="text-lg font-semibold mb-2 text-blue-400">3. Report to Domain Registrar & Hosting</h3>
+              <p className="text-gray-400 mb-3">Report the scam website to get it taken down:</p>
+              <ul className="text-gray-400 space-y-2">
+                <li>• <strong>Namecheap Abuse:</strong> <a href="https://www.namecheap.com/support/knowledgebase/article.aspx/9196/5/how-to-report-abuse/" className="text-blue-400 hover:underline" target="_blank" rel="noopener noreferrer">Report abuse to Namecheap</a></li>
+                <li>• <strong>Email:</strong> <a href="mailto:abuse@namecheap.com" className="text-blue-400 hover:underline">abuse@namecheap.com</a></li>
+                <li>• <strong>WHOIS Lookup:</strong> Use <a href="https://www.whois.com/whois/oxycapitalsltd.com" className="text-blue-400 hover:underline" target="_blank" rel="noopener noreferrer">WHOIS</a> to find registrar and hosting info for any scam domain</li>
+              </ul>
+              <p className="text-gray-500 text-sm mt-3">Include the scam domain, wallet addresses, and any evidence of fraud in your report.</p>
+            </div>
+            
+            <div className="card p-6 rounded-xl">
+              <h3 className="text-lg font-semibold mb-2 text-blue-400">4. Document Everything</h3>
               <p className="text-gray-400">Save all messages, transaction records, and screenshots. This evidence is crucial for any investigation.</p>
             </div>
             
             <div className="card p-6 rounded-xl">
-              <h3 className="text-lg font-semibold mb-2 text-blue-400">4. Warn Others</h3>
+              <h3 className="text-lg font-semibold mb-2 text-blue-400">5. Warn Others</h3>
               <p className="text-gray-400">Share this page to help prevent others from falling victim to this scam.</p>
             </div>
           </div>
