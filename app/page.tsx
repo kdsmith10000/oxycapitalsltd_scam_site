@@ -433,7 +433,7 @@ export default function Home() {
                 </div>
                 <div>
                   <span className="text-gray-500">Status:</span>
-                  <p className="text-green-400 font-semibold">Reported & Under Review</p>
+                  <p className="text-red-400 font-semibold">Classified as Phishing & Malicious</p>
                 </div>
                 <div>
                   <span className="text-gray-500">Reported Domain:</span>
