@@ -47,8 +47,25 @@ body {
 
 .evidence-img {
   transition: transform 0.3s ease;
+  aspect-ratio: 16/10;
+  object-fit: cover;
 }
 
 .evidence-img:hover {
   transform: scale(1.02);
+}
+
+.evidence-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.evidence-card img {
+  flex-shrink: 0;
+}
+
+.evidence-card .caption {
+  padding: 0.5rem 0.75rem;
+  margin-top: auto;
 }

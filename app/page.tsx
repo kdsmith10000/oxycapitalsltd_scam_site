@@ -262,48 +262,34 @@ export default function Home() {
           <h2 className="text-2xl font-bold text-center mb-2">Scammer Conversation Evidence</h2>
           <p className="text-center text-gray-400 mb-8">Actual messages from the scammer trying to steal money</p>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-            <div className="card rounded-xl overflow-hidden">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+            <div className="card evidence-card rounded-lg overflow-hidden">
               <img src="/evidence/scammer conversation.jpg" alt="Scammer Conversation 1" className="w-full evidence-img" />
-              <div className="p-3">
-                <p className="text-gray-400 text-xs">Conversation 1</p>
-              </div>
+              <div className="caption"><span className="text-gray-500 text-xs">1</span></div>
             </div>
-            <div className="card rounded-xl overflow-hidden">
+            <div className="card evidence-card rounded-lg overflow-hidden">
               <img src="/evidence/scammer conversation 2.jpg" alt="Scammer Conversation 2" className="w-full evidence-img" />
-              <div className="p-3">
-                <p className="text-gray-400 text-xs">Conversation 2</p>
-              </div>
+              <div className="caption"><span className="text-gray-500 text-xs">2</span></div>
             </div>
-            <div className="card rounded-xl overflow-hidden">
+            <div className="card evidence-card rounded-lg overflow-hidden">
               <img src="/evidence/scammer conversation 3.jpg" alt="Scammer Conversation 3" className="w-full evidence-img" />
-              <div className="p-3">
-                <p className="text-gray-400 text-xs">Conversation 3</p>
-              </div>
+              <div className="caption"><span className="text-gray-500 text-xs">3</span></div>
             </div>
-            <div className="card rounded-xl overflow-hidden">
+            <div className="card evidence-card rounded-lg overflow-hidden">
               <img src="/evidence/scammer conversation 4.jpg" alt="Scammer Conversation 4" className="w-full evidence-img" />
-              <div className="p-3">
-                <p className="text-gray-400 text-xs">Conversation 4</p>
-              </div>
+              <div className="caption"><span className="text-gray-500 text-xs">4</span></div>
             </div>
-            <div className="card rounded-xl overflow-hidden">
+            <div className="card evidence-card rounded-lg overflow-hidden">
               <img src="/evidence/scammer conversation 5.jpg" alt="Scammer Conversation 5" className="w-full evidence-img" />
-              <div className="p-3">
-                <p className="text-gray-400 text-xs">Conversation 5</p>
-              </div>
+              <div className="caption"><span className="text-gray-500 text-xs">5</span></div>
             </div>
-            <div className="card rounded-xl overflow-hidden">
+            <div className="card evidence-card rounded-lg overflow-hidden">
               <img src="/evidence/scammer conversation 6.jpg" alt="Scammer Conversation 6" className="w-full evidence-img" />
-              <div className="p-3">
-                <p className="text-gray-400 text-xs">Conversation 6</p>
-              </div>
+              <div className="caption"><span className="text-gray-500 text-xs">6</span></div>
             </div>
-            <div className="card rounded-xl overflow-hidden">
+            <div className="card evidence-card rounded-lg overflow-hidden">
               <img src="/evidence/scammer conversation 7.jpg" alt="Scammer Conversation 7" className="w-full evidence-img" />
-              <div className="p-3">
-                <p className="text-gray-400 text-xs">Conversation 7</p>
-              </div>
+              <div className="caption"><span className="text-gray-500 text-xs">7</span></div>
             </div>
           </div>
         </div>
@@ -315,73 +301,67 @@ export default function Home() {
           <h2 className="text-2xl font-bold text-center mb-2">Platform & Technical Evidence</h2>
           <p className="text-center text-gray-400 mb-8">Screenshots of the scam operation</p>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="card rounded-xl overflow-hidden">
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
+            <div className="card evidence-card rounded-lg overflow-hidden">
               <img src="/evidence/scam homepage.jpg" alt="Scam Homepage" className="w-full evidence-img" />
-              <div className="p-4">
-                <h4 className="font-semibold text-red-400">Scam Homepage</h4>
-                <p className="text-gray-400 text-sm">The fake OxyCapitals trading platform</p>
+              <div className="caption">
+                <h4 className="font-semibold text-red-400 text-sm">Scam Homepage</h4>
               </div>
             </div>
             
-            <div className="card rounded-xl overflow-hidden">
+            <div className="card evidence-card rounded-lg overflow-hidden">
               <img src="/evidence/deposit page.jpg" alt="Deposit Page" className="w-full evidence-img" />
-              <div className="p-4">
-                <h4 className="font-semibold text-red-400">Deposit Page</h4>
-                <p className="text-gray-400 text-sm">Where victims are told to send crypto</p>
+              <div className="caption">
+                <h4 className="font-semibold text-red-400 text-sm">Deposit Page</h4>
               </div>
             </div>
             
-            <div className="card rounded-xl overflow-hidden">
+            <div className="card evidence-card rounded-lg overflow-hidden">
               <img src="/evidence/btc address scam page.jpg" alt="BTC Address Page" className="w-full evidence-img" />
-              <div className="p-4">
-                <h4 className="font-semibold text-red-400">BTC Address Display</h4>
-                <p className="text-gray-400 text-sm">Scam wallet address shown to victims</p>
+              <div className="caption">
+                <h4 className="font-semibold text-red-400 text-sm">BTC Address Display</h4>
               </div>
             </div>
             
-            <div className="card rounded-xl overflow-hidden">
+            <div className="card evidence-card rounded-lg overflow-hidden">
               <img src="/evidence/scammers personal wallet.jpg" alt="Scammer's Wallet" className="w-full evidence-img" />
-              <div className="p-4">
-                <h4 className="font-semibold text-red-400">Scammer&apos;s Wallet</h4>
-                <p className="text-gray-400 text-sm">Blockchain explorer showing their wallet</p>
+              <div className="caption">
+                <h4 className="font-semibold text-red-400 text-sm">Scammer&apos;s Wallet</h4>
               </div>
             </div>
             
-            <div className="card rounded-xl overflow-hidden">
+            <div className="card evidence-card rounded-lg overflow-hidden">
               <img src="/evidence/dns.jpg" alt="DNS Records" className="w-full evidence-img" />
-              <div className="p-4">
-                <h4 className="font-semibold text-red-400">DNS Records</h4>
-                <p className="text-gray-400 text-sm">Technical evidence of the scam domain</p>
+              <div className="caption">
+                <h4 className="font-semibold text-red-400 text-sm">DNS Records</h4>
               </div>
             </div>
             
-            <div className="card rounded-xl overflow-hidden">
+            <div className="card evidence-card rounded-lg overflow-hidden">
               <img src="/evidence/1.jpg" alt="Additional Evidence" className="w-full evidence-img" />
-              <div className="p-4">
-                <h4 className="font-semibold text-red-400">Additional Evidence</h4>
-                <p className="text-gray-400 text-sm">Supporting documentation</p>
+              <div className="caption">
+                <h4 className="font-semibold text-red-400 text-sm">Additional Evidence</h4>
               </div>
             </div>
           </div>
 
-          <div className="mt-8 grid md:grid-cols-3 gap-6">
-            <div className="card rounded-xl overflow-hidden">
+          <div className="mt-6 grid grid-cols-3 gap-4">
+            <div className="card evidence-card rounded-lg overflow-hidden">
               <img src="/evidence/rdap.jpg" alt="RDAP Record 1" className="w-full evidence-img" />
-              <div className="p-4">
-                <h4 className="font-semibold text-gray-400">RDAP Record</h4>
+              <div className="caption">
+                <span className="text-gray-500 text-xs">RDAP 1</span>
               </div>
             </div>
-            <div className="card rounded-xl overflow-hidden">
+            <div className="card evidence-card rounded-lg overflow-hidden">
               <img src="/evidence/rdap2.jpg" alt="RDAP Record 2" className="w-full evidence-img" />
-              <div className="p-4">
-                <h4 className="font-semibold text-gray-400">RDAP Record 2</h4>
+              <div className="caption">
+                <span className="text-gray-500 text-xs">RDAP 2</span>
               </div>
             </div>
-            <div className="card rounded-xl overflow-hidden">
+            <div className="card evidence-card rounded-lg overflow-hidden">
               <img src="/evidence/rdap3.jpg" alt="RDAP Record 3" className="w-full evidence-img" />
-              <div className="p-4">
-                <h4 className="font-semibold text-gray-400">RDAP Record 3</h4>
+              <div className="caption">
+                <span className="text-gray-500 text-xs">RDAP 3</span>
               </div>
             </div>
           </div>
