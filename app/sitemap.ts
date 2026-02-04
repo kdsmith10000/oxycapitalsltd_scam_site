@@ -1,19 +1,20 @@
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://oxycapitals-scam.vercel.app'
+  const baseUrl = 'https://dirtycrypto.org'
+  const currentDate = new Date()
   
   return [
     {
       url: baseUrl,
-      lastModified: new Date('2026-02-04'),
-      changeFrequency: 'weekly',
+      lastModified: currentDate,
+      changeFrequency: 'daily',
       priority: 1,
     },
     {
       url: `${baseUrl}/mirrorexp`,
-      lastModified: new Date('2026-02-04'),
-      changeFrequency: 'weekly',
+      lastModified: currentDate,
+      changeFrequency: 'daily',
       priority: 0.9,
     },
   ]
