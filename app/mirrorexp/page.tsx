@@ -327,7 +327,7 @@ export default function MirrorExpPage() {
           </div>
 
           {/* Statistical Confidence */}
-          <div className="card p-6 rounded-xl border border-green-700/50 bg-green-950/20">
+          <div className="card p-6 rounded-xl border border-green-700/50 bg-green-950/20 mb-8">
             <h3 className="text-lg font-semibold mb-4 text-green-400 text-center">Fraud Confidence Score: 100/100</h3>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center text-sm">
               <div>
@@ -366,6 +366,96 @@ export default function MirrorExpPage() {
             <p className="text-center text-gray-400 text-sm mt-4">
               Statistical analysis confirms <strong className="text-green-300">99.9% confidence</strong> this is a deliberate scam operation.
             </p>
+          </div>
+
+          {/* Round Numbers Evidence */}
+          <div className="card p-6 rounded-xl border-2 border-orange-600 bg-orange-950/20">
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-10 h-10 bg-orange-600 rounded-full flex items-center justify-center flex-shrink-0">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                </svg>
+              </div>
+              <div>
+                <h3 className="text-lg font-bold text-orange-400">Strong Evidence: Round Number Pattern</h3>
+                <p className="text-gray-400 text-sm">Manual withdrawals reveal scammer behavior</p>
+              </div>
+            </div>
+
+            <div className="bg-black/40 rounded-lg p-4 mb-4">
+              <h4 className="text-orange-300 font-semibold text-sm mb-3">MirrorExp Scammer&apos;s Withdrawal</h4>
+              <div className="flex items-center justify-between flex-wrap gap-4 mb-4 p-3 bg-red-900/30 rounded border border-red-700">
+                <div>
+                  <p className="text-gray-500 text-xs">From scam wallet to staging</p>
+                  <p className="text-2xl font-mono font-bold text-red-400">0.05000000 BTC</p>
+                </div>
+                <div className="text-right">
+                  <span className="px-3 py-1 bg-red-600/30 text-red-400 text-xs font-semibold rounded-full border border-red-600">
+                    EXACT ROUND NUMBER
+                  </span>
+                </div>
+              </div>
+              <p className="text-gray-400 text-sm">
+                <strong className="text-orange-300">Why this matters:</strong> Real trading creates messy decimals from fees and price conversions (e.g., 0.04973 BTC). 
+                A perfectly round <code className="bg-black/50 px-1 rounded">0.05</code> BTC indicates a <strong>manual, deliberate withdrawal</strong> — the scammer chose a &quot;nice&quot; amount to extract.
+              </p>
+            </div>
+
+            <div className="bg-black/40 rounded-lg p-4">
+              <h4 className="text-orange-300 font-semibold text-sm mb-3">Exchange Pool Shows Pattern of Fraud</h4>
+              <p className="text-gray-400 text-sm mb-3">
+                The exchange consolidation wallet received <strong className="text-purple-300">65 inputs</strong> in a single transaction. 
+                Analysis reveals <strong className="text-red-400">15+ round number amounts</strong>:
+              </p>
+              <div className="grid grid-cols-3 md:grid-cols-5 gap-2 text-center text-xs font-mono">
+                <div className="bg-red-900/30 p-2 rounded border border-red-700/50">
+                  <p className="text-red-400">0.50 BTC</p>
+                  <p className="text-gray-500">×2</p>
+                </div>
+                <div className="bg-red-900/30 p-2 rounded border border-red-700/50">
+                  <p className="text-red-400">0.40 BTC</p>
+                  <p className="text-gray-500">×2</p>
+                </div>
+                <div className="bg-red-900/30 p-2 rounded border border-red-700/50">
+                  <p className="text-red-400">0.25 BTC</p>
+                  <p className="text-gray-500">×2</p>
+                </div>
+                <div className="bg-red-900/30 p-2 rounded border border-red-700/50">
+                  <p className="text-red-400">0.21 BTC</p>
+                </div>
+                <div className="bg-red-900/30 p-2 rounded border border-red-700/50">
+                  <p className="text-red-400">0.20 BTC</p>
+                </div>
+                <div className="bg-red-900/30 p-2 rounded border border-red-700/50">
+                  <p className="text-red-400">0.19 BTC</p>
+                </div>
+                <div className="bg-red-900/30 p-2 rounded border border-red-700/50">
+                  <p className="text-red-400">0.15 BTC</p>
+                </div>
+                <div className="bg-red-900/30 p-2 rounded border border-red-700/50">
+                  <p className="text-red-400">0.12 BTC</p>
+                </div>
+                <div className="bg-red-900/30 p-2 rounded border border-red-700/50">
+                  <p className="text-red-400">0.10 BTC</p>
+                </div>
+                <div className="bg-red-900/30 p-2 rounded border border-red-700/50">
+                  <p className="text-red-400">0.09 BTC</p>
+                </div>
+                <div className="bg-red-900/30 p-2 rounded border border-red-700/50">
+                  <p className="text-red-400">0.07 BTC</p>
+                </div>
+                <div className="bg-red-900/30 p-2 rounded border border-red-700/50">
+                  <p className="text-red-400">0.06 BTC</p>
+                </div>
+                <div className="bg-red-900/30 p-2 rounded border border-red-700/50">
+                  <p className="text-red-400">0.05 BTC</p>
+                  <p className="text-gray-500">×3</p>
+                </div>
+              </div>
+              <p className="text-yellow-400 text-sm mt-4 text-center">
+                <strong>This concentration of round numbers strongly suggests the exchange pool is a criminal cash-out point receiving funds from multiple manual fraud operations.</strong>
+              </p>
+            </div>
           </div>
         </div>
       </section>
