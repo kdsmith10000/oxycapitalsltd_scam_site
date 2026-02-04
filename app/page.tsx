@@ -84,29 +84,34 @@ export default function Home() {
           
           <div className="card p-8 rounded-2xl border-2 border-red-600 bg-red-950/20 text-center mb-8">
             <p className="text-gray-400 text-sm uppercase tracking-wider mb-2">Confirmed Stolen Amount</p>
-            <p className="text-5xl md:text-7xl font-black text-red-500 mb-2">$38,076+</p>
-            <p className="text-gray-400">USD equivalent in cryptocurrency</p>
+            <p className="text-5xl md:text-7xl font-black text-red-500 mb-2">$40,400+</p>
+            <p className="text-gray-400">USD equivalent across Bitcoin, Ethereum &amp; Tron</p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-4 mb-4">
+          {/* Bitcoin Wallets */}
+          <h3 className="text-lg font-semibold text-orange-400 mb-3 flex items-center gap-2">
+            <span className="w-3 h-3 bg-orange-400 rounded-full"></span>
+            Bitcoin Wallets — $38,076
+          </h3>
+          <div className="grid md:grid-cols-3 gap-4 mb-6">
             <div className="card p-5 rounded-xl text-center border border-orange-700/50">
-              <p className="text-3xl font-bold text-orange-400 mb-1">$4,918</p>
+              <p className="text-2xl font-bold text-orange-400 mb-1">$4,918</p>
               <p className="text-gray-400 text-sm">Collection Wallet</p>
               <p className="text-gray-500 text-xs mt-1">43 victim deposits</p>
             </div>
             <div className="card p-5 rounded-xl text-center border border-yellow-700/50">
-              <p className="text-3xl font-bold text-yellow-400 mb-1">$9,657</p>
+              <p className="text-2xl font-bold text-yellow-400 mb-1">$9,657</p>
               <p className="text-gray-400 text-sm">Personal Wallet</p>
               <p className="text-gray-500 text-xs mt-1">67 transactions</p>
             </div>
             <div className="card p-5 rounded-xl text-center border border-purple-700/50">
-              <p className="text-3xl font-bold text-purple-400 mb-1">$23,501</p>
+              <p className="text-2xl font-bold text-purple-400 mb-1">$23,501</p>
               <p className="text-gray-400 text-sm">ByBit Wallet</p>
               <p className="text-gray-500 text-xs mt-1">6 high-value transactions</p>
             </div>
           </div>
 
-          <div className="card p-4 rounded-xl mb-4 bg-purple-950/20 border border-purple-700/50">
+          <div className="card p-4 rounded-xl mb-6 bg-purple-950/20 border border-purple-700/50">
             <h4 className="text-purple-400 font-semibold text-sm mb-2 text-center">ByBit Wallet Major Transactions</h4>
             <div className="grid md:grid-cols-3 gap-3 text-center text-sm">
               <div>
@@ -124,17 +129,65 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="card p-4 rounded-xl text-center bg-blue-950/30 border border-blue-700/50">
-            <p className="text-blue-400 text-sm">
-              <span className="font-semibold">116+ transactions</span> across 4 tracked Bitcoin wallets &bull; 
-              All funds transferred to exchanges for cash-out
+          {/* SegWit Routing Wallet */}
+          <div className="card p-4 rounded-xl mb-6 bg-orange-950/20 border border-orange-700/30">
+            <h4 className="text-orange-300 font-semibold text-sm mb-2">SegWit Routing Wallet</h4>
+            <p className="text-gray-400 text-sm mb-2">
+              <code className="text-xs bg-black/50 px-2 py-1 rounded">bc1qz5xlayxpa3dk4u8vduwvx0r4f3v2sf0eejpd46</code>
+            </p>
+            <p className="text-gray-500 text-xs">
+              Intermediate wallet receiving $868 from victims, forwarding to Personal &amp; ByBit wallets. 
+              Amounts included in wallet totals above.
+            </p>
+          </div>
+
+          {/* Ethereum */}
+          <h3 className="text-lg font-semibold text-blue-400 mb-3 flex items-center gap-2">
+            <span className="w-3 h-3 bg-blue-400 rounded-full"></span>
+            Ethereum — $2,252
+          </h3>
+          <div className="card p-4 rounded-xl mb-6 bg-blue-950/20 border border-blue-700/50">
+            <div className="flex flex-wrap items-center justify-between gap-4">
+              <div>
+                <p className="text-gray-400 text-sm">Wallet</p>
+                <code className="text-xs text-blue-300 bg-black/50 px-2 py-1 rounded">0x5f9ce0dA56c867D1BD06185D6d21744daC83cb09</code>
+              </div>
+              <div className="text-right">
+                <p className="text-2xl font-bold text-blue-400">0.994 ETH</p>
+                <p className="text-gray-500 text-xs">Received Jul 14, 2025 • Cashed out Jul 15</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Tron */}
+          <h3 className="text-lg font-semibold text-red-400 mb-3 flex items-center gap-2">
+            <span className="w-3 h-3 bg-red-400 rounded-full"></span>
+            Tron (TRX/USDT) — $75+
+          </h3>
+          <div className="card p-4 rounded-xl mb-6 bg-red-950/20 border border-red-700/50">
+            <div className="flex flex-wrap items-center justify-between gap-4">
+              <div>
+                <p className="text-gray-400 text-sm">Wallet</p>
+                <code className="text-xs text-red-300 bg-black/50 px-2 py-1 rounded">TCgcYUD74LoeMoKRb7X6WcYPVD3VgZccZR</code>
+              </div>
+              <div className="text-right">
+                <p className="text-2xl font-bold text-red-400">~500 TRX</p>
+                <p className="text-gray-500 text-xs">Aug 2023 - Apr 2024 • Multiple USDT transfers</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="card p-4 rounded-xl text-center bg-gray-800/50 border border-gray-700">
+            <p className="text-gray-300 text-sm">
+              <span className="font-semibold">120+ transactions</span> across 6 wallets on 3 blockchains &bull; 
+              All funds traced to exchange cash-outs
             </p>
           </div>
 
           <div className="mt-6 text-center">
             <p className="text-gray-500 text-sm">
-              These figures represent only the <strong className="text-gray-300">Bitcoin wallets we&apos;ve traced</strong>. 
-              Actual losses are likely <strong className="text-red-400">significantly higher</strong> when accounting for Ethereum, USDT (Tron), and unreported victims.
+              Actual losses are likely <strong className="text-red-400">higher</strong> — USDT transfer amounts on Tron not fully captured, 
+              and many victims never report.
             </p>
           </div>
         </div>
