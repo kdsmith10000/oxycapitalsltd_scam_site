@@ -9,7 +9,7 @@ export default function Home() {
   const closeLightbox = () => setLightboxImage(null)
 
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen" itemScope itemType="https://schema.org/Article">
       {/* Lightbox Modal */}
       {lightboxImage && (
         <div 
@@ -34,19 +34,19 @@ export default function Home() {
       {/* Hero Warning Section */}
       <section className="relative py-16 px-4 text-center border-b border-red-900/50 bg-gradient-to-b from-red-950/30 to-transparent">
         <div className="max-w-4xl mx-auto">
-          <div className="warning-pulse inline-block mb-6 px-6 py-2 bg-red-600 text-white font-bold rounded-full text-sm uppercase tracking-wider">
+          <div className="warning-pulse inline-block mb-6 px-6 py-2 bg-red-600 text-white font-bold rounded-full text-sm uppercase tracking-wider" role="alert">
             Scam Alert - Do Not Send Money
           </div>
-          <h1 className="text-4xl md:text-6xl font-black mb-6">
+          <h1 className="text-4xl md:text-6xl font-black mb-6" itemProp="headline">
             <span className="gradient-text">OxyCapitals</span> is a{' '}
             <span className="text-red-500">SCAM</span>
           </h1>
-          <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-            This site impersonates legitimate cryptocurrency traders to steal your money. 
-            We have traced their Bitcoin transactions and exposed the fraud.
+          <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto" itemProp="description">
+            OxyCapitalsLtd.com is a cryptocurrency phishing scam that impersonates Discord admins to steal Bitcoin. 
+            This site documents the fraud with blockchain evidence and exposes their wallet addresses.
           </p>
           <div className="card inline-block p-4 rounded-lg">
-            <p className="text-gray-400 text-sm">Scam Website</p>
+            <p className="text-gray-400 text-sm">Fraudulent Crypto Scam Website</p>
             <p className="text-red-400 font-mono text-lg">oxycapitalsltd.com</p>
           </div>
         </div>
@@ -263,7 +263,7 @@ export default function Home() {
               </div>
               <img 
                 src="/evidence/real discord admin.jpg" 
-                alt="Real Discord Admin - salmaogs" 
+                alt="Real Discord admin salmaogs profile - legitimate crypto community moderator" 
                 className="w-full evidence-img cursor-zoom-in" 
                 onClick={() => openLightbox('/evidence/real discord admin.jpg')}
               />
@@ -275,7 +275,7 @@ export default function Home() {
               </div>
               <img 
                 src="/evidence/fake account impersonating discord admin.jpg" 
-                alt="Fake Discord Account - sajmaogs" 
+                alt="Fake Discord account sajmaogs impersonating admin - crypto scammer typosquatting profile" 
                 className="w-full evidence-img cursor-zoom-in" 
                 onClick={() => openLightbox('/evidence/fake account impersonating discord admin.jpg')}
               />
@@ -301,31 +301,31 @@ export default function Home() {
           
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
             <div className="card evidence-card rounded-lg overflow-hidden cursor-zoom-in" onClick={() => openLightbox('/evidence/scammer conversation.jpg')}>
-              <img src="/evidence/scammer conversation.jpg" alt="Scammer Conversation 1" className="w-full evidence-img" />
+              <img src="/evidence/scammer conversation.jpg" alt="OxyCapitals scammer Discord DM conversation - crypto phishing message evidence" className="w-full evidence-img" />
               <div className="caption"><span className="text-gray-500 text-xs">1</span></div>
             </div>
             <div className="card evidence-card rounded-lg overflow-hidden cursor-zoom-in" onClick={() => openLightbox('/evidence/scammer conversation 2.jpg')}>
-              <img src="/evidence/scammer conversation 2.jpg" alt="Scammer Conversation 2" className="w-full evidence-img" />
+              <img src="/evidence/scammer conversation 2.jpg" alt="Cryptocurrency scam conversation - fraudster asking for Bitcoin deposit" className="w-full evidence-img" />
               <div className="caption"><span className="text-gray-500 text-xs">2</span></div>
             </div>
             <div className="card evidence-card rounded-lg overflow-hidden cursor-zoom-in" onClick={() => openLightbox('/evidence/scammer conversation 3.jpg')}>
-              <img src="/evidence/scammer conversation 3.jpg" alt="Scammer Conversation 3" className="w-full evidence-img" />
+              <img src="/evidence/scammer conversation 3.jpg" alt="Discord impersonation scam messages - fake admin requesting crypto payment" className="w-full evidence-img" />
               <div className="caption"><span className="text-gray-500 text-xs">3</span></div>
             </div>
             <div className="card evidence-card rounded-lg overflow-hidden cursor-zoom-in" onClick={() => openLightbox('/evidence/scammer conversation 4.jpg')}>
-              <img src="/evidence/scammer conversation 4.jpg" alt="Scammer Conversation 4" className="w-full evidence-img" />
+              <img src="/evidence/scammer conversation 4.jpg" alt="OxyCapitalsLtd scam chat evidence - fraudulent investment scheme messages" className="w-full evidence-img" />
               <div className="caption"><span className="text-gray-500 text-xs">4</span></div>
             </div>
             <div className="card evidence-card rounded-lg overflow-hidden cursor-zoom-in" onClick={() => openLightbox('/evidence/scammer conversation 5.jpg')}>
-              <img src="/evidence/scammer conversation 5.jpg" alt="Scammer Conversation 5" className="w-full evidence-img" />
+              <img src="/evidence/scammer conversation 5.jpg" alt="Crypto scammer social engineering tactics - phishing conversation screenshot" className="w-full evidence-img" />
               <div className="caption"><span className="text-gray-500 text-xs">5</span></div>
             </div>
             <div className="card evidence-card rounded-lg overflow-hidden cursor-zoom-in" onClick={() => openLightbox('/evidence/scammer conversation 6.jpg')}>
-              <img src="/evidence/scammer conversation 6.jpg" alt="Scammer Conversation 6" className="w-full evidence-img" />
+              <img src="/evidence/scammer conversation 6.jpg" alt="Bitcoin theft scam conversation - OxyCapitals fraud evidence" className="w-full evidence-img" />
               <div className="caption"><span className="text-gray-500 text-xs">6</span></div>
             </div>
             <div className="card evidence-card rounded-lg overflow-hidden cursor-zoom-in" onClick={() => openLightbox('/evidence/scammer conversation 7.jpg')}>
-              <img src="/evidence/scammer conversation 7.jpg" alt="Scammer Conversation 7" className="w-full evidence-img" />
+              <img src="/evidence/scammer conversation 7.jpg" alt="Cryptocurrency investment scam chat - impersonation fraud proof" className="w-full evidence-img" />
               <div className="caption"><span className="text-gray-500 text-xs">7</span></div>
             </div>
           </div>
@@ -341,42 +341,42 @@ export default function Home() {
           
           <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
             <div className="card evidence-card rounded-lg overflow-hidden cursor-zoom-in" onClick={() => openLightbox('/evidence/scam homepage.jpg')}>
-              <img src="/evidence/scam homepage.jpg" alt="Scam Homepage" className="w-full evidence-img" />
+              <img src="/evidence/scam homepage.jpg" alt="OxyCapitals scam website homepage - fake crypto trading platform screenshot" className="w-full evidence-img" />
               <div className="caption">
                 <h4 className="font-semibold text-red-400 text-sm">Scam Homepage</h4>
               </div>
             </div>
             
             <div className="card evidence-card rounded-lg overflow-hidden cursor-zoom-in" onClick={() => openLightbox('/evidence/deposit page.jpg')}>
-              <img src="/evidence/deposit page.jpg" alt="Deposit Page" className="w-full evidence-img" />
+              <img src="/evidence/deposit page.jpg" alt="OxyCapitalsLtd fraudulent deposit page requesting Bitcoin" className="w-full evidence-img" />
               <div className="caption">
                 <h4 className="font-semibold text-red-400 text-sm">Deposit Page</h4>
               </div>
             </div>
             
             <div className="card evidence-card rounded-lg overflow-hidden cursor-zoom-in" onClick={() => openLightbox('/evidence/btc address scam page.jpg')}>
-              <img src="/evidence/btc address scam page.jpg" alt="BTC Address Page" className="w-full evidence-img" />
+              <img src="/evidence/btc address scam page.jpg" alt="OxyCapitals scam Bitcoin wallet address for stealing cryptocurrency" className="w-full evidence-img" />
               <div className="caption">
                 <h4 className="font-semibold text-red-400 text-sm">BTC Address Display</h4>
               </div>
             </div>
             
             <div className="card evidence-card rounded-lg overflow-hidden cursor-zoom-in" onClick={() => openLightbox('/evidence/scammers personal wallet.jpg')}>
-              <img src="/evidence/scammers personal wallet.jpg" alt="Scammer's Wallet" className="w-full evidence-img" />
+              <img src="/evidence/scammers personal wallet.jpg" alt="Crypto scammer personal Bitcoin wallet with stolen funds" className="w-full evidence-img" />
               <div className="caption">
                 <h4 className="font-semibold text-red-400 text-sm">Scammer&apos;s Wallet</h4>
               </div>
             </div>
             
             <div className="card evidence-card rounded-lg overflow-hidden cursor-zoom-in" onClick={() => openLightbox('/evidence/dns.jpg')}>
-              <img src="/evidence/dns.jpg" alt="DNS Records" className="w-full evidence-img" />
+              <img src="/evidence/dns.jpg" alt="DNS records proving oxycapitalsltd.com is a fraudulent domain" className="w-full evidence-img" />
               <div className="caption">
                 <h4 className="font-semibold text-red-400 text-sm">DNS Records</h4>
               </div>
             </div>
             
             <div className="card evidence-card rounded-lg overflow-hidden cursor-zoom-in" onClick={() => openLightbox('/evidence/1.jpg')}>
-              <img src="/evidence/1.jpg" alt="Additional Evidence" className="w-full evidence-img" />
+              <img src="/evidence/1.jpg" alt="Additional evidence of OxyCapitals cryptocurrency fraud" className="w-full evidence-img" />
               <div className="caption">
                 <h4 className="font-semibold text-red-400 text-sm">Additional Evidence</h4>
               </div>
@@ -544,11 +544,96 @@ export default function Home() {
         </div>
       </section>
 
+      {/* SEO Content Section */}
+      <section className="py-12 px-4 border-b border-gray-800">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-2xl font-bold text-center mb-6">Crypto Scam Awareness: Protect Yourself from Phishing & Impersonation Fraud</h2>
+          
+          <article className="prose prose-invert max-w-none">
+            <div className="card p-6 rounded-xl mb-6">
+              <h3 className="text-lg font-semibold mb-3 text-yellow-400">What is a Crypto Impersonation Scam?</h3>
+              <p className="text-gray-300 mb-4">
+                Cryptocurrency impersonation scams, like the OxyCapitals fraud documented on this page, are a growing threat in the crypto community. 
+                Scammers create fake profiles that closely mimic trusted figures—Discord moderators, crypto influencers, customer support agents, 
+                or even friends. They use tactics like <strong>typosquatting</strong> (changing one letter in a username) to appear legitimate. 
+                The goal is always the same: trick you into sending Bitcoin, Ethereum, or other cryptocurrencies to their wallet.
+              </p>
+              <p className="text-gray-400 text-sm">
+                Keywords: crypto impersonation scam, discord scam, cryptocurrency fraud, typosquatting attack, social engineering crypto
+              </p>
+            </div>
+
+            <div className="card p-6 rounded-xl mb-6">
+              <h3 className="text-lg font-semibold mb-3 text-yellow-400">How to Identify Crypto Phishing Attacks</h3>
+              <p className="text-gray-300 mb-4">
+                Crypto phishing attacks are designed to steal your funds or private keys. Warning signs include:
+              </p>
+              <ul className="text-gray-300 space-y-2 mb-4 list-disc list-inside">
+                <li>Unsolicited DMs about &ldquo;investment opportunities&rdquo; or &ldquo;guaranteed returns&rdquo;</li>
+                <li>Usernames that look almost identical to real admins (check every character!)</li>
+                <li>Links to unfamiliar trading platforms or wallet connection requests</li>
+                <li>Urgency and pressure to act immediately</li>
+                <li>Requests to send crypto to &ldquo;verify&rdquo; your wallet or &ldquo;unlock&rdquo; rewards</li>
+                <li>Fake websites mimicking legitimate exchanges (always check the URL carefully)</li>
+              </ul>
+              <p className="text-gray-400 text-sm">
+                Keywords: crypto phishing, cryptocurrency phishing attack, fake crypto website, bitcoin phishing scam, how to spot crypto scam
+              </p>
+            </div>
+
+            <div className="card p-6 rounded-xl mb-6">
+              <h3 className="text-lg font-semibold mb-3 text-yellow-400">About OxyCapitals / OxyCapitalsLtd Scam</h3>
+              <p className="text-gray-300 mb-4">
+                OxyCapitals (also known as OxyCapitalsLtd, operating at oxycapitalsltd.com) is a fraudulent cryptocurrency investment platform. 
+                This scam operation impersonates legitimate Discord administrators to build trust with victims, then directs them to deposit 
+                Bitcoin and other cryptocurrencies to their fake trading platform. The deposited funds go directly to the scammer&apos;s 
+                personal wallet and are subsequently cashed out through major exchanges.
+              </p>
+              <p className="text-gray-300 mb-4">
+                The scam has been reported to Netcraft and other cybersecurity authorities. The domain oxycapitalsltd.com 
+                has no legitimate business registration, no verifiable team members, and uses a fake UK address. 
+                This is a classic example of a <strong>pig butchering scam</strong> combined with <strong>impersonation fraud</strong>.
+              </p>
+              <p className="text-gray-400 text-sm">
+                Keywords: oxycapitals scam, oxycapitalsltd fraud, oxycapitalsltd.com scam, is oxycapitals legit, oxycapitals review, oxycapitals warning
+              </p>
+            </div>
+
+            <div className="card p-6 rounded-xl">
+              <h3 className="text-lg font-semibold mb-3 text-yellow-400">Related Crypto Scam Types to Watch For</h3>
+              <p className="text-gray-300 mb-4">
+                Beyond the OxyCapitals scam, be aware of these common cryptocurrency fraud schemes:
+              </p>
+              <ul className="text-gray-300 space-y-2 list-disc list-inside">
+                <li><strong>Pig Butchering Scams:</strong> Long-term romance or friendship scams that eventually lead to fake crypto investments</li>
+                <li><strong>Fake Exchange Scams:</strong> Fraudulent trading platforms that steal deposits</li>
+                <li><strong>Giveaway Scams:</strong> Fake celebrity or influencer giveaways requiring you to &ldquo;send crypto first&rdquo;</li>
+                <li><strong>Recovery Scams:</strong> Fraudsters promising to recover lost crypto for an upfront fee</li>
+                <li><strong>Rug Pulls:</strong> Crypto projects that disappear with investor funds</li>
+                <li><strong>Phishing Links:</strong> Fake websites stealing wallet credentials or seed phrases</li>
+              </ul>
+              <p className="text-gray-400 text-sm mt-4">
+                Keywords: pig butchering scam, crypto romance scam, fake crypto exchange, bitcoin giveaway scam, crypto recovery scam, rug pull scam
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="py-8 px-4 text-center text-gray-500">
         <p className="mb-2">This site was created to expose cryptocurrency fraud and protect potential victims.</p>
         <p className="text-sm">All information is based on publicly available blockchain data and documented evidence.</p>
-        <p className="text-sm mt-4">Last updated: February 2026</p>
+        <p className="text-sm mt-4" itemProp="dateModified">Last updated: February 2026</p>
+        <nav className="mt-6 text-xs text-gray-600 space-x-4">
+          <span>Crypto Scam Alert</span>
+          <span>•</span>
+          <span>Phishing Warning</span>
+          <span>•</span>
+          <span>Impersonation Fraud</span>
+          <span>•</span>
+          <span>Bitcoin Scam Awareness</span>
+        </nav>
       </footer>
     </main>
   )
