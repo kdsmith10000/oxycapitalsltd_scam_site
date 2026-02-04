@@ -66,6 +66,23 @@ export default function MirrorExpPage() {
         </div>
       </section>
 
+      {/* Fun Cartoon Section */}
+      <section className="py-8 px-4 border-b border-gray-800 bg-gradient-to-b from-purple-950/20 to-transparent">
+        <div className="max-w-2xl mx-auto text-center">
+          <div className="card rounded-2xl overflow-hidden border-2 border-purple-600/50 shadow-lg shadow-purple-900/20">
+            <img 
+              src="/evidence/mirrorexp/cartoon.png" 
+              alt="Dirty Digital, Clean Cash - Cartoon illustrating how crypto scammers launder stolen cryptocurrency through exchanges" 
+              className="w-full cursor-zoom-in hover:scale-[1.02] transition-transform"
+              onClick={() => openLightbox('/evidence/mirrorexp/cartoon.png')}
+            />
+          </div>
+          <p className="text-gray-500 text-sm mt-4 italic">
+            &quot;Dirty Digital, Clean Cash&quot; — How crypto scammers launder your money through exchanges
+          </p>
+        </div>
+      </section>
+
       {/* Typosquatting Alert */}
       <section className="py-8 px-4 border-b border-gray-800 bg-yellow-950/30">
         <div className="max-w-4xl mx-auto">
