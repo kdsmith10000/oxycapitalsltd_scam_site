@@ -457,6 +457,168 @@ export default function MirrorExpPage() {
               </p>
             </div>
           </div>
+
+          {/* 65-Input Consolidation Evidence */}
+          <div className="card p-6 rounded-xl border-2 border-purple-600 bg-purple-950/20 mt-8">
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-10 h-10 bg-purple-600 rounded-full flex items-center justify-center flex-shrink-0">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+              </div>
+              <div>
+                <h3 className="text-lg font-bold text-purple-400">Strong Evidence: 65-Input Consolidation Transaction</h3>
+                <p className="text-gray-400 text-sm">All roads lead to the same criminal cash-out point</p>
+              </div>
+            </div>
+
+            <div className="bg-black/40 rounded-lg p-4 mb-4">
+              <h4 className="text-purple-300 font-semibold text-sm mb-3">Both Staging Wallets → Same Destination</h4>
+              <div className="grid md:grid-cols-2 gap-4 mb-4">
+                <div className="p-3 bg-yellow-900/30 rounded border border-yellow-700">
+                  <p className="text-gray-500 text-xs mb-1">Staging Wallet #1</p>
+                  <p className="text-yellow-400 font-mono text-sm break-all">bc1qqtjr...u5u0x</p>
+                  <p className="text-gray-400 text-xs mt-1">Emptied at <strong>14:01:55</strong></p>
+                </div>
+                <div className="p-3 bg-yellow-900/30 rounded border border-yellow-700">
+                  <p className="text-gray-500 text-xs mb-1">Staging Wallet #2</p>
+                  <p className="text-yellow-400 font-mono text-sm break-all">bc1q6z9f...v6ug</p>
+                  <p className="text-gray-400 text-xs mt-1">Emptied at <strong>13:57:30</strong></p>
+                </div>
+              </div>
+              <div className="text-center mb-4">
+                <div className="inline-block px-4 py-2 bg-red-900/30 rounded-full border border-red-600">
+                  <span className="text-red-400 font-bold">Only 4 minutes apart → Same operator</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-black/40 rounded-lg p-4">
+              <h4 className="text-purple-300 font-semibold text-sm mb-3">The $2.1 Million Pool</h4>
+              <div className="p-4 bg-purple-900/30 rounded border border-purple-700 mb-4">
+                <p className="text-gray-500 text-xs mb-1">Final Destination Wallet</p>
+                <p className="text-purple-400 font-mono text-sm break-all mb-2">bc1qdfl3dfnwwvlqa5jpckh0ccwpjczh5y566c4g76</p>
+                <div className="grid grid-cols-3 gap-4 text-center">
+                  <div>
+                    <p className="text-3xl font-bold text-red-400">65</p>
+                    <p className="text-gray-500 text-xs">Input Addresses</p>
+                  </div>
+                  <div>
+                    <p className="text-3xl font-bold text-purple-400">29.43</p>
+                    <p className="text-gray-500 text-xs">BTC Received</p>
+                  </div>
+                  <div>
+                    <p className="text-3xl font-bold text-green-400">$2.1M</p>
+                    <p className="text-gray-500 text-xs">USD Value</p>
+                  </div>
+                </div>
+              </div>
+              <p className="text-gray-400 text-sm">
+                <strong className="text-purple-300">Why this matters:</strong> A single transaction receiving funds from 65 different addresses indicates this is either:
+              </p>
+              <ul className="text-gray-400 text-sm mt-2 space-y-1 ml-4">
+                <li>• A <strong className="text-blue-300">cryptocurrency exchange</strong> deposit address (can be subpoenaed for KYC records)</li>
+                <li>• A <strong className="text-red-300">mixing/tumbling service</strong> used to obscure fund origins</li>
+                <li>• A <strong className="text-yellow-300">larger criminal operation</strong> consolidating proceeds from multiple scams</li>
+              </ul>
+              <p className="text-yellow-400 text-sm mt-4 text-center">
+                <strong>This is the key lead for law enforcement — identifying who controls this wallet can unmask the entire operation.</strong>
+              </p>
+            </div>
+          </div>
+
+          {/* One-Time-Use Staging Wallets Evidence */}
+          <div className="card p-6 rounded-xl border-2 border-cyan-600 bg-cyan-950/20 mt-8">
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-10 h-10 bg-cyan-600 rounded-full flex items-center justify-center flex-shrink-0">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                </svg>
+              </div>
+              <div>
+                <h3 className="text-lg font-bold text-cyan-400">Strong Evidence: Disposable Staging Wallets</h3>
+                <p className="text-gray-400 text-sm">One-time-use wallets designed to obscure the money trail</p>
+              </div>
+            </div>
+
+            <div className="bg-black/40 rounded-lg p-4 mb-4">
+              <h4 className="text-cyan-300 font-semibold text-sm mb-3">Wallet Lifecycle Analysis</h4>
+              <div className="space-y-4">
+                <div className="p-4 bg-cyan-900/20 rounded border border-cyan-700/50">
+                  <div className="flex items-center justify-between flex-wrap gap-4">
+                    <div>
+                      <p className="text-gray-500 text-xs">Staging Wallet #1</p>
+                      <p className="text-cyan-400 font-mono text-sm">bc1qqtjrzvrft6rz794x0qr70zvm9r6kz5y4zu5u0x</p>
+                    </div>
+                    <div className="text-right">
+                      <span className="px-3 py-1 bg-gray-800 text-gray-400 text-xs font-semibold rounded-full border border-gray-600">
+                        BALANCE: 0.00 BTC
+                      </span>
+                    </div>
+                  </div>
+                  <div className="mt-3 grid grid-cols-3 gap-2 text-center text-xs">
+                    <div className="p-2 bg-green-900/30 rounded">
+                      <p className="text-green-400 font-semibold">Received</p>
+                      <p className="text-gray-300">0.05 BTC</p>
+                    </div>
+                    <div className="p-2 bg-yellow-900/30 rounded">
+                      <p className="text-yellow-400 font-semibold">Held for</p>
+                      <p className="text-gray-300">~3 hours</p>
+                    </div>
+                    <div className="p-2 bg-red-900/30 rounded">
+                      <p className="text-red-400 font-semibold">Emptied</p>
+                      <p className="text-gray-300">100%</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="p-4 bg-cyan-900/20 rounded border border-cyan-700/50">
+                  <div className="flex items-center justify-between flex-wrap gap-4">
+                    <div>
+                      <p className="text-gray-500 text-xs">Staging Wallet #2</p>
+                      <p className="text-cyan-400 font-mono text-sm">bc1q6z9f0gcl7d0j2jsc02jxcxv4n2ydjnqqr5v6ug</p>
+                    </div>
+                    <div className="text-right">
+                      <span className="px-3 py-1 bg-gray-800 text-gray-400 text-xs font-semibold rounded-full border border-gray-600">
+                        BALANCE: 0.00 BTC
+                      </span>
+                    </div>
+                  </div>
+                  <div className="mt-3 grid grid-cols-3 gap-2 text-center text-xs">
+                    <div className="p-2 bg-green-900/30 rounded">
+                      <p className="text-green-400 font-semibold">Received</p>
+                      <p className="text-gray-300">0.06 BTC</p>
+                    </div>
+                    <div className="p-2 bg-yellow-900/30 rounded">
+                      <p className="text-yellow-400 font-semibold">Held for</p>
+                      <p className="text-gray-300">~3 hours</p>
+                    </div>
+                    <div className="p-2 bg-red-900/30 rounded">
+                      <p className="text-red-400 font-semibold">Emptied</p>
+                      <p className="text-gray-300">100%</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-black/40 rounded-lg p-4">
+              <p className="text-gray-400 text-sm">
+                <strong className="text-cyan-300">Why this matters:</strong> These wallets exhibit classic <strong>&quot;burner wallet&quot;</strong> behavior:
+              </p>
+              <ul className="text-gray-400 text-sm mt-2 space-y-1 ml-4">
+                <li>• <strong className="text-red-300">Single use:</strong> Each wallet received exactly one deposit, then was emptied completely</li>
+                <li>• <strong className="text-red-300">Zero balance:</strong> Both wallets now hold 0 BTC — abandoned after use</li>
+                <li>• <strong className="text-red-300">Brief holding:</strong> Funds held for only ~3 hours before forwarding</li>
+                <li>• <strong className="text-red-300">Layering technique:</strong> Creates an extra hop between victim and exchange to obscure the trail</li>
+              </ul>
+              <div className="mt-4 p-3 bg-red-900/30 rounded border border-red-700 text-center">
+                <p className="text-red-400 text-sm">
+                  <strong>This is textbook money laundering — using intermediate &quot;staging&quot; wallets to distance stolen funds from their source before cashing out.</strong>
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
