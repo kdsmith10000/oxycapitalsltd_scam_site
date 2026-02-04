@@ -104,16 +104,16 @@ export default function MirrorExpPage() {
               <div className="flex justify-center items-center gap-8 flex-wrap mb-4">
                 <div>
                   <p className="text-xs text-gray-500 mb-1">REAL ADMIN USERNAME</p>
-                  <p className="text-2xl md:text-3xl font-mono font-bold text-green-400">Example_Admin</p>
+                  <p className="text-2xl md:text-3xl font-mono font-bold text-green-400"><span className="text-green-300 underline decoration-4">.</span>atraveller</p>
                 </div>
                 <div className="text-3xl text-gray-600">vs</div>
                 <div>
                   <p className="text-xs text-gray-500 mb-1">SCAMMER USERNAME</p>
-                  <p className="text-2xl md:text-3xl font-mono font-bold text-red-400">Examp<span className="text-red-300 underline decoration-4">l</span>e_Admin</p>
+                  <p className="text-2xl md:text-3xl font-mono font-bold text-red-400"><span className="text-red-300 underline decoration-4">_</span>atraveller</p>
                 </div>
               </div>
               <p className="text-yellow-300 text-sm">
-                Scammers change just <strong>one or two characters</strong> in usernames to impersonate trusted community members!
+                The scammer changed just <strong>ONE character</strong>: a period <code className="bg-green-900/50 px-1 rounded">.</code> became an underscore <code className="bg-red-900/50 px-1 rounded">_</code>
               </p>
             </div>
             
@@ -376,14 +376,31 @@ export default function MirrorExpPage() {
           <h2 className="text-2xl font-bold text-center mb-2">Impersonation Evidence</h2>
           <p className="text-center text-gray-400 mb-8">Side-by-side comparison of real admin vs scammer account</p>
           
+          {/* Username Comparison */}
+          <div className="card p-6 rounded-xl mb-8 text-center bg-black/30">
+            <p className="text-gray-400 mb-4">Spot the difference in the usernames:</p>
+            <div className="flex justify-center items-center gap-8 flex-wrap">
+              <div>
+                <p className="text-xs text-gray-500 mb-1">REAL ADMIN</p>
+                <p className="text-3xl font-mono font-bold text-green-400"><span className="text-green-300 underline decoration-4">.</span>atraveller</p>
+              </div>
+              <div className="text-4xl text-gray-600">vs</div>
+              <div>
+                <p className="text-xs text-gray-500 mb-1">SCAMMER</p>
+                <p className="text-3xl font-mono font-bold text-red-400"><span className="text-red-300 underline decoration-4">_</span>atraveller</p>
+              </div>
+            </div>
+            <p className="text-yellow-400 mt-4 text-sm">The scammer changed just ONE character: <code className="bg-green-900/50 px-2 py-0.5 rounded">.</code> → <code className="bg-red-900/50 px-2 py-0.5 rounded">_</code></p>
+          </div>
+          
           <div className="grid md:grid-cols-2 gap-6 mb-8">
             <div className="card rounded-xl overflow-hidden border-2 border-green-600">
               <div className="bg-green-900/30 p-3 text-center">
-                <span className="text-green-400 font-bold uppercase text-sm">Real Admin Account</span>
+                <span className="text-green-400 font-bold uppercase text-sm">.atraveller (Real Admin)</span>
               </div>
               <img 
                 src="/evidence/mirrorexp/real admin.jpg" 
-                alt="Real Discord admin profile - legitimate crypto community moderator" 
+                alt="Real Discord admin .atraveller profile - legitimate crypto community moderator" 
                 className="w-full evidence-img cursor-zoom-in" 
                 onClick={() => openLightbox('/evidence/mirrorexp/real admin.jpg')}
               />
@@ -391,11 +408,11 @@ export default function MirrorExpPage() {
             
             <div className="card rounded-xl overflow-hidden border-2 border-red-600">
               <div className="bg-red-900/30 p-3 text-center">
-                <span className="text-red-400 font-bold uppercase text-sm">Scammer (Typosquatted)</span>
+                <span className="text-red-400 font-bold uppercase text-sm">_atraveller (Scammer)</span>
               </div>
               <img 
                 src="/evidence/mirrorexp/fake admin.jpg" 
-                alt="Fake Discord account impersonating admin using typosquatting - crypto scammer profile" 
+                alt="Fake Discord account _atraveller impersonating admin using typosquatting - crypto scammer profile" 
                 className="w-full evidence-img cursor-zoom-in" 
                 onClick={() => openLightbox('/evidence/mirrorexp/fake admin.jpg')}
               />
@@ -406,7 +423,7 @@ export default function MirrorExpPage() {
           
           <div className="card p-4 rounded-xl bg-yellow-900/20 border border-yellow-700">
             <p className="text-yellow-400 text-center text-sm">
-              <strong>Warning:</strong> The scammer uses &quot;typosquatting&quot; - creating a username that looks almost identical to the real admin by changing just one or two characters. Always verify usernames character by character!
+              <strong>Warning:</strong> The scammer uses &quot;typosquatting&quot; - creating a username that looks almost identical to the real admin by changing just one character. A period <code className="bg-black/30 px-1 rounded">.</code> looks very similar to an underscore <code className="bg-black/30 px-1 rounded">_</code> at a glance. Always verify usernames character by character!
             </p>
           </div>
         </div>
