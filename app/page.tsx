@@ -595,6 +595,98 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Law Enforcement - Exchange Identification */}
+      <section className="py-12 px-4 border-b border-gray-800 bg-gradient-to-b from-green-950/30 to-transparent">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-2xl font-bold text-center mb-2">Exchange Cash-Out Addresses</h2>
+          <p className="text-center text-gray-400 mb-2">Critical information for law enforcement to identify the scammer</p>
+          <p className="text-center text-green-400 text-sm mb-8">These addresses can be subpoenaed from exchanges for KYC records</p>
+          
+          <div className="card p-6 rounded-xl border-2 border-green-600 bg-green-950/20 mb-6">
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+              </div>
+              <div>
+                <h3 className="text-lg font-bold text-green-400">Primary Cash-Out Wallet (Bitcoin)</h3>
+                <p className="text-gray-400 text-sm">Likely Binance - Major exchange hot wallet</p>
+              </div>
+            </div>
+            <div className="bg-black/50 p-4 rounded-lg">
+              <code className="text-green-300 text-sm md:text-base break-all">1FWQiwK27EnGXb6BiBMRLJvunJQZZPMcGd</code>
+            </div>
+            <div className="mt-3 flex flex-wrap gap-4 text-sm">
+              <div>
+                <span className="text-gray-500">Amount Cashed Out:</span>
+                <span className="text-red-400 font-semibold ml-2">~$9,657+</span>
+              </div>
+              <div>
+                <span className="text-gray-500">Transactions:</span>
+                <span className="text-gray-300 ml-2">Multiple deposits</span>
+              </div>
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-4 mb-6">
+            <div className="card p-5 rounded-xl border border-blue-700/50 bg-blue-950/20">
+              <h4 className="text-blue-400 font-semibold mb-2 flex items-center gap-2">
+                <span className="w-2 h-2 bg-blue-400 rounded-full"></span>
+                Ethereum Cash-Out
+              </h4>
+              <code className="text-xs text-blue-300 bg-black/50 px-2 py-1 rounded block break-all mb-2">
+                0x5938E9B77bA995c402B17ABa9e069731F27e6FF3
+              </code>
+              <p className="text-gray-500 text-xs">Received 0.994 ETH (~$2,252) • Jul 15, 2025</p>
+              <p className="text-gray-400 text-xs mt-1">Scammer sent entire ETH balance here within hours of receiving</p>
+            </div>
+
+            <div className="card p-5 rounded-xl border border-red-700/50 bg-red-950/20">
+              <h4 className="text-red-400 font-semibold mb-2 flex items-center gap-2">
+                <span className="w-2 h-2 bg-red-400 rounded-full"></span>
+                Tron (TRX) Cash-Out
+              </h4>
+              <code className="text-xs text-red-300 bg-black/50 px-2 py-1 rounded block break-all mb-2">
+                TTBFQK759oYTXSscYp5DahGtDN6zLyNXUp
+              </code>
+              <p className="text-gray-500 text-xs">Received 296.9 TRX • Apr 4, 2024</p>
+              <p className="text-gray-400 text-xs mt-1">Destination for TRX funds from scam wallet</p>
+            </div>
+          </div>
+
+          <div className="card p-5 rounded-xl border border-purple-700/50 bg-purple-950/20 mb-6">
+            <h4 className="text-purple-400 font-semibold mb-3">ByBit-Linked Wallet (Requires KYC)</h4>
+            <div className="bg-black/50 p-3 rounded-lg mb-3">
+              <code className="text-purple-300 text-sm break-all">192UAp4TEGApNdxPbSN5veQZ8ynyixjqvB</code>
+            </div>
+            <div className="grid md:grid-cols-3 gap-3 text-sm">
+              <div>
+                <span className="text-gray-500">Total Volume:</span>
+                <p className="text-red-400 font-semibold">$23,501</p>
+              </div>
+              <div>
+                <span className="text-gray-500">Largest Txn:</span>
+                <p className="text-red-400 font-semibold">$20,144</p>
+              </div>
+              <div>
+                <span className="text-gray-500">Exchange:</span>
+                <p className="text-purple-300 font-semibold">ByBit</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="card p-4 rounded-xl bg-yellow-950/20 border border-yellow-700/50">
+            <h4 className="text-yellow-400 font-semibold text-sm mb-2">For Law Enforcement</h4>
+            <p className="text-gray-400 text-sm">
+              These exchange deposit addresses are tied to accounts with <strong className="text-yellow-300">KYC verification</strong>. 
+              Exchanges like Binance and ByBit maintain records of user identity documents, IP addresses, and withdrawal history. 
+              A subpoena to these exchanges for the accounts associated with these deposit addresses can reveal the scammer&apos;s identity.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Warning Banner */}
       <section className="py-8 px-4 border-b border-gray-800 bg-red-950/40">
         <div className="max-w-4xl mx-auto">
