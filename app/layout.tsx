@@ -6,12 +6,15 @@ import { Analytics } from '@vercel/analytics/next'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'SCAM ALERT: OxyCapitals / OxyCapitalsLtd Exposed | Crypto Phishing & Impersonation Scam',
-  description: 'Warning: OxyCapitals (oxycapitalsltd.com) is a cryptocurrency investment scam impersonating Discord admins to steal Bitcoin. Full blockchain evidence, wallet addresses, and transaction analysis. Protect yourself from crypto phishing scams.',
+  title: 'SCAM ALERT: OxyCapitals & MirrorExp Exposed | Crypto Phishing & Typosquatting Scams',
+  description: 'Warning: OxyCapitals (oxycapitalsltd.com) and MirrorExp (mirrorexp.com) are cryptocurrency scams using Discord admin impersonation and typosquatting to steal Bitcoin, Ethereum, and USDT. Full blockchain evidence and wallet addresses exposed.',
   keywords: [
     'oxycapitals scam',
     'oxycapitalsltd scam',
     'oxycapitalsltd.com scam',
+    'mirrorexp scam',
+    'mirrorexp.com scam',
+    'mirror exp scam',
     'bridgestocks scam',
     'bridgestocks.com scam',
     'crypto scam',
@@ -29,6 +32,7 @@ export const metadata: Metadata = {
     'fake crypto website',
     'crypto scam wallet address',
     'typosquatting scam',
+    'typosquatting attack crypto',
     'discord admin impersonation',
     'crypto scam awareness',
     'how to spot crypto scams',
@@ -40,6 +44,9 @@ export const metadata: Metadata = {
     'romance scam crypto',
     'social engineering crypto scam',
     'sajmaogs scam',
+    'ethereum scam',
+    'usdt scam',
+    'usdc scam',
   ].join(', '),
   authors: [{ name: 'Crypto Scam Awareness' }],
   creator: 'Crypto Scam Awareness',

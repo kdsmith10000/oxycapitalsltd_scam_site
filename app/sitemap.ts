@@ -6,9 +6,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
       url: baseUrl,
-      lastModified: new Date('2026-02-03'),
+      lastModified: new Date('2026-02-04'),
       changeFrequency: 'weekly',
       priority: 1,
+    },
+    {
+      url: `${baseUrl}/mirrorexp`,
+      lastModified: new Date('2026-02-04'),
+      changeFrequency: 'weekly',
+      priority: 0.9,
     },
   ]
 }
