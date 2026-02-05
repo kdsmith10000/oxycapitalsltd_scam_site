@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 
-type ScamName = 'oxycapitals' | 'mirrorexp' | 'trucopy' | 'everrextrade'
+type ScamName = 'oxycapitals' | 'mirrorexp' | 'trucopy' | 'everrextrade' | 'affluenceaura'
 
 interface RelatedScamsProps {
   exclude: ScamName
@@ -53,6 +53,17 @@ const scamData: Record<ScamName, { name: string; color: string; bgColor: string;
     btnHover: 'hover:bg-yellow-700',
     href: '/everrextrade',
     amount: 'Under Investigation',
+  },
+  affluenceaura: {
+    name: 'AffluenceAura',
+    color: 'text-teal-400',
+    bgColor: 'bg-teal-950/20',
+    hoverBg: 'hover:bg-teal-950/30',
+    borderColor: 'border-teal-600',
+    btnBg: 'bg-teal-600',
+    btnHover: 'hover:bg-teal-700',
+    href: '/affluenceaura',
+    amount: '$0 stolen (abandoned)',
   },
 }
 
@@ -164,8 +175,8 @@ export default function RelatedScams({ exclude, showBridgeStocks = false }: Rela
         {!showBridgeStocks && (
           <div className="mt-6 card p-4 rounded-xl bg-yellow-950/20 border border-yellow-700/50">
             <p className="text-yellow-400 text-sm text-center">
-              <strong>Pattern Match:</strong> All three scams use Discord impersonation, fake trading platforms, 
-              and rapid cash-out to exchange wallets. They may be operated by the same criminal network.
+              <strong>Pattern Match:</strong> These scams use Discord impersonation, fake trading platforms, 
+              and shared infrastructure (V12Hosting). They may be operated by the same criminal network.
             </p>
           </div>
         )}

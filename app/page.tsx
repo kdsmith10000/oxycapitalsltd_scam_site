@@ -148,11 +148,11 @@ export default function Home() {
 
           <div className="grid grid-cols-3 gap-3 sm:gap-6">
             <div className="card p-4 sm:p-6 rounded-xl text-center">
-              <div className="text-2xl sm:text-4xl font-black text-red-500 mb-1 sm:mb-2">$93K+</div>
+              <div className="text-2xl sm:text-4xl font-black text-red-500 mb-1 sm:mb-2">$114.8K+</div>
               <p className="text-gray-400 text-xs sm:text-base">Documented stolen funds</p>
             </div>
             <div className="card p-4 sm:p-6 rounded-xl text-center">
-              <div className="text-2xl sm:text-4xl font-black text-orange-500 mb-1 sm:mb-2">4</div>
+              <div className="text-2xl sm:text-4xl font-black text-orange-500 mb-1 sm:mb-2">5</div>
               <p className="text-gray-400 text-xs sm:text-base">Scam operations exposed</p>
             </div>
             <div className="card p-4 sm:p-6 rounded-xl text-center">
@@ -415,6 +415,56 @@ export default function Home() {
                 </div>
               </div>
             </Link>
+
+            {/* AffluenceAura Card */}
+            <Link href="/affluenceaura" className="block">
+              <div className="card p-4 sm:p-6 rounded-xl border-2 border-teal-600 bg-teal-950/20 hover:bg-teal-950/30 transition-colors h-full">
+                <div className="flex items-center gap-3 sm:gap-4 mb-3 sm:mb-4">
+                  <div className="w-11 h-11 sm:w-14 sm:h-14 bg-teal-600 rounded-full flex items-center justify-center flex-shrink-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 sm:h-7 sm:w-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" />
+                    </svg>
+                  </div>
+                  <div className="min-w-0 flex-1">
+                    <h3 className="text-xl sm:text-2xl font-bold text-teal-400">AffluenceAura</h3>
+                    <p className="text-gray-400 text-xs sm:text-sm truncate">affluenceaura.com</p>
+                  </div>
+                  <div className="flex-shrink-0">
+                    <span className="px-2 sm:px-3 py-1 bg-gray-600/30 text-gray-400 text-xs font-semibold rounded-full border border-gray-600">
+                      ABANDONED
+                    </span>
+                  </div>
+                </div>
+                
+                <div className="bg-black/30 rounded-lg p-3 sm:p-4 mb-3 sm:mb-4">
+                  <div className="grid grid-cols-2 gap-3 sm:gap-4 text-xs sm:text-sm">
+                    <div>
+                      <span className="text-gray-500">Total Stolen:</span>
+                      <p className="text-green-400 font-bold text-base sm:text-lg">$0</p>
+                    </div>
+                    <div>
+                      <span className="text-gray-500">Chains:</span>
+                      <p className="text-gray-300">BTC, ETH, BNB</p>
+                    </div>
+                    <div>
+                      <span className="text-gray-500">Method:</span>
+                      <p className="text-teal-400">WhatsApp + Fake Platform</p>
+                    </div>
+                    <div>
+                      <span className="text-gray-500">Status:</span>
+                      <p className="text-gray-400">Abandoned (0 victims)</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="flex items-center justify-between gap-2">
+                  <p className="text-gray-500 text-xs sm:text-sm">Abandoned scam — same V12Hosting as EverrexTrade</p>
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-teal-400 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                  </svg>
+                </div>
+              </div>
+            </Link>
           </div>
         </div>
       </section>
@@ -549,6 +599,10 @@ export default function Home() {
             <span className="text-gray-700 hidden sm:inline">|</span>
             <Link href="/everrextrade" className="text-yellow-400 hover:text-yellow-300 text-sm">
               EverrexTrade Investigation
+            </Link>
+            <span className="text-gray-700 hidden sm:inline">|</span>
+            <Link href="/affluenceaura" className="text-teal-400 hover:text-teal-300 text-sm">
+              AffluenceAura Investigation
             </Link>
           </div>
           

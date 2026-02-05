@@ -45,6 +45,12 @@ export const metadata: Metadata = {
     'everrextrade.com scam',
     'everrex trade scam',
     'is everrextrade legit',
+    'affluenceaura scam',
+    'affluenceaura.com scam',
+    'affluence aura scam',
+    'is affluenceaura legit',
+    'affluenceaura review',
+    'v12hosting scam',
     // Scammer usernames
     'sajmaogs scam',
     'sajmaogs discord',
@@ -113,6 +119,8 @@ export const metadata: Metadata = {
     '1GC4fSsmgJMCtMh643WBCi5pBnTpqqCXP2',
     '0x5f9ce0dA56c867D1BD06185D6d21744daC83cb09',
     'bc1qy28j32l0ntncyuqczzeau2k9yslh76djy0nh5v',
+    'bc1ql6w87cknrxf7qn5x5rhejw8tufche4rykgqmfx',
+    '0xB6C8EE0e6814d7016cF8afeA89942CDE382AC87a',
   ].join(', '),
   authors: [{ name: 'Dirty Crypto' }, { name: 'Blockchain Forensics' }],
   creator: 'Dirty Crypto',
@@ -219,6 +227,7 @@ const jsonLd = {
         { '@type': 'ListItem', position: 3, name: 'MirrorExp Scam', item: 'https://dirtycrypto.org/mirrorexp' },
         { '@type': 'ListItem', position: 4, name: 'TruCopy Scam', item: 'https://dirtycrypto.org/trucopy' },
         { '@type': 'ListItem', position: 5, name: 'EverrexTrade Scam', item: 'https://dirtycrypto.org/everrextrade' },
+        { '@type': 'ListItem', position: 6, name: 'AffluenceAura Scam', item: 'https://dirtycrypto.org/affluenceaura' },
       ],
     },
     {
@@ -245,7 +254,7 @@ const jsonLd = {
       '@id': 'https://dirtycrypto.org/#scamlist',
       name: 'Exposed Cryptocurrency Scams',
       description: 'List of cryptocurrency scams documented with blockchain evidence',
-      numberOfItems: 4,
+      numberOfItems: 5,
       itemListElement: [
         {
           '@type': 'ListItem',
@@ -274,6 +283,13 @@ const jsonLd = {
           name: 'EverrexTrade Scam',
           description: 'Fake forex/stocks trading platform promoted via Discord impersonation with typosquatting username salmaogs_pm. Investigation ongoing.',
           url: 'https://dirtycrypto.org/everrextrade',
+        },
+        {
+          '@type': 'ListItem',
+          position: 5,
+          name: 'AffluenceAura Scam',
+          description: 'Abandoned fake crypto investment platform with empty scam wallets on BTC, ETH, and BNB. Shares V12Hosting infrastructure with EverrexTrade.',
+          url: 'https://dirtycrypto.org/affluenceaura',
         },
       ],
     },

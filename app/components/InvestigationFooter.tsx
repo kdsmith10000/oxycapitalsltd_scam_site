@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 
-type PageName = 'oxycapitals' | 'mirrorexp' | 'trucopy' | 'everrextrade'
+type PageName = 'oxycapitals' | 'mirrorexp' | 'trucopy' | 'everrextrade' | 'affluenceaura'
 
 interface InvestigationFooterProps {
   currentPage: PageName
@@ -14,6 +14,7 @@ const links: Record<PageName, { href: string; label: string; color: string }> = 
   mirrorexp: { href: '/mirrorexp', label: 'MirrorExp Investigation', color: 'text-orange-400 hover:underline' },
   trucopy: { href: '/trucopy', label: 'TruCopy Investigation', color: 'text-purple-400 hover:underline' },
   everrextrade: { href: '/everrextrade', label: 'EverrexTrade Investigation', color: 'text-yellow-400 hover:underline' },
+  affluenceaura: { href: '/affluenceaura', label: 'AffluenceAura Investigation', color: 'text-teal-400 hover:underline' },
 }
 
 export default function InvestigationFooter({ currentPage, tags }: InvestigationFooterProps) {
