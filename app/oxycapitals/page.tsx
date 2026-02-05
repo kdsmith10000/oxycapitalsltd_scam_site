@@ -411,57 +411,59 @@ export default function OxyCapitalsPage() {
           <h2 className="text-2xl font-bold text-center mb-2">Related Scam Operations</h2>
           <p className="text-center text-gray-400 mb-8">Similar scams using the same methodology have been documented</p>
           
-          {/* MirrorExp - NEW */}
-          <div className="card p-6 rounded-xl border-2 border-red-600 bg-red-950/20 mb-6">
-            <div className="flex items-center gap-4 mb-4">
-              <div className="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center flex-shrink-0">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
-                </svg>
+          <div className="grid md:grid-cols-2 gap-6 mb-6">
+            {/* MirrorExp */}
+            <div className="card p-6 rounded-xl border-2 border-red-600 bg-red-950/20">
+              <div className="flex items-center gap-4 mb-4">
+                <div className="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center flex-shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-red-400">MirrorExp</h3>
+                  <p className="text-gray-400 text-sm">$30,000+ stolen</p>
+                </div>
               </div>
-              <div>
-                <h3 className="text-xl font-bold text-red-400">MirrorExp.com</h3>
-                <p className="text-gray-400 text-sm">Active scam using typosquatting impersonation</p>
-              </div>
-              <div className="ml-auto">
-                <span className="px-3 py-1 bg-red-600/30 text-red-400 text-xs font-semibold rounded-full border border-red-600">
-                  ACTIVE SCAM
-                </span>
-              </div>
-            </div>
-            
-            <div className="bg-black/30 rounded-lg p-4 mb-4">
-              <div className="grid md:grid-cols-2 gap-4 text-sm">
-                <div>
-                  <span className="text-gray-500">Domain:</span>
-                  <p className="text-red-400 font-mono">mirrorexp.com</p>
-                </div>
-                <div>
-                  <span className="text-gray-500">Total Stolen:</span>
-                  <p className="text-red-400 font-semibold">$30,000+ (BTC, ETH, USDT, USDC)</p>
-                </div>
-                <div>
-                  <span className="text-gray-500">Method:</span>
-                  <p className="text-yellow-400">Typosquatting Discord usernames</p>
-                  <p className="text-gray-500 text-xs">(Changes 1-2 letters to impersonate admins)</p>
-                </div>
-                <div>
-                  <span className="text-gray-500">Operation Duration:</span>
-                  <p className="text-yellow-400">6+ months (since Aug 2025)</p>
-                </div>
+              
+              <div className="text-center">
+                <Link 
+                  href="/mirrorexp"
+                  className="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white font-semibold px-4 py-2 rounded-lg transition-colors text-sm"
+                >
+                  View Investigation
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                  </svg>
+                </Link>
               </div>
             </div>
-            
-            <div className="text-center">
-              <Link 
-                href="/mirrorexp"
-                className="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white font-semibold px-6 py-3 rounded-lg transition-colors"
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                </svg>
-                View Full MirrorExp Investigation
-              </Link>
+
+            {/* TruCopy */}
+            <div className="card p-6 rounded-xl border-2 border-purple-600 bg-purple-950/20">
+              <div className="flex items-center gap-4 mb-4">
+                <div className="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center flex-shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-purple-400">TruCopy</h3>
+                  <p className="text-gray-400 text-sm">$25,000+ stolen (8 chains)</p>
+                </div>
+              </div>
+              
+              <div className="text-center">
+                <Link 
+                  href="/trucopy"
+                  className="inline-flex items-center gap-2 bg-purple-600 hover:bg-purple-700 text-white font-semibold px-4 py-2 rounded-lg transition-colors text-sm"
+                >
+                  View Investigation
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                  </svg>
+                </Link>
+              </div>
             </div>
           </div>
 
@@ -1007,9 +1009,17 @@ export default function OxyCapitalsPage() {
         <p className="mb-2 text-sm sm:text-base">This site was created to expose cryptocurrency fraud and protect potential victims.</p>
         <p className="text-xs sm:text-sm">All information is based on publicly available blockchain data and documented evidence.</p>
         <p className="text-xs sm:text-sm mt-4" itemProp="dateModified">Last updated: February 2026</p>
-        <div className="mt-4 sm:mt-6">
+        <div className="mt-4 sm:mt-6 flex justify-center gap-4">
           <Link href="/" className="text-blue-400 hover:underline text-sm">
-            ← Back to Dirty Crypto Home
+            ← Back to Dirty Crypto
+          </Link>
+          <span className="text-gray-700">|</span>
+          <Link href="/mirrorexp" className="text-orange-400 hover:underline text-sm">
+            MirrorExp Investigation
+          </Link>
+          <span className="text-gray-700">|</span>
+          <Link href="/trucopy" className="text-purple-400 hover:underline text-sm">
+            TruCopy Investigation
           </Link>
         </div>
         <nav className="mt-4 sm:mt-6 text-xs text-gray-600 flex flex-wrap justify-center gap-2 sm:gap-4">

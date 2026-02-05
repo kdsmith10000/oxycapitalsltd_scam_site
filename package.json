@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "db:seed": "dotenv -e .env -e .env.local -- tsx db/seed.ts",
+    "db:seed-trucopy": "dotenv -e .env -e .env.local -- tsx db/seed-trucopy.ts",
     "db:reset": "dotenv -e .env -e .env.local -- tsx db/seed.ts"
   },
   "dependencies": {

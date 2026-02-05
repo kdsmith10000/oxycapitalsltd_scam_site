@@ -783,51 +783,65 @@ export default function MirrorExpPage() {
           <h2 className="text-2xl font-bold text-center mb-2">Related Scam Operations</h2>
           <p className="text-center text-gray-400 mb-8">This scam uses identical methodology to other known operations</p>
           
-          <div className="card p-6 rounded-xl border-2 border-orange-600 bg-orange-950/20">
-            <div className="flex items-center gap-4 mb-4">
-              <div className="w-12 h-12 bg-orange-600 rounded-full flex items-center justify-center flex-shrink-0">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
-                </svg>
-              </div>
-              <div>
-                <h3 className="text-xl font-bold text-orange-400">Same Methodology as OxyCapitals</h3>
-                <p className="text-gray-400 text-sm">Identical scam playbook detected</p>
-              </div>
-            </div>
-            
-            <div className="bg-black/30 rounded-lg p-4 mb-4">
-              <div className="grid md:grid-cols-2 gap-4 text-sm">
-                <div>
-                  <span className="text-gray-500">Tactic:</span>
-                  <p className="text-yellow-400">Discord Admin Impersonation</p>
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="card p-6 rounded-xl border-2 border-orange-600 bg-orange-950/20">
+              <div className="flex items-center gap-4 mb-4">
+                <div className="w-12 h-12 bg-orange-600 rounded-full flex items-center justify-center flex-shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                  </svg>
                 </div>
                 <div>
-                  <span className="text-gray-500">Method:</span>
-                  <p className="text-yellow-400">Typosquatting Usernames</p>
-                </div>
-                <div>
-                  <span className="text-gray-500">Infrastructure:</span>
-                  <p className="text-yellow-400">Fake Trading Platform</p>
-                </div>
-                <div>
-                  <span className="text-gray-500">Cash-out:</span>
-                  <p className="text-yellow-400">Rapid exchange deposits</p>
+                  <h3 className="text-xl font-bold text-orange-400">OxyCapitals</h3>
+                  <p className="text-gray-400 text-sm">$54,000+ stolen</p>
                 </div>
               </div>
+              
+              <div className="text-center">
+                <Link 
+                  href="/oxycapitals"
+                  className="inline-flex items-center gap-2 bg-orange-600 hover:bg-orange-700 text-white font-semibold px-4 py-2 rounded-lg transition-colors text-sm"
+                >
+                  View Investigation
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                  </svg>
+                </Link>
+              </div>
             </div>
-            
-            <div className="text-center">
-              <Link 
-                href="/oxycapitals"
-                className="inline-flex items-center gap-2 bg-orange-600 hover:bg-orange-700 text-white font-semibold px-6 py-3 rounded-lg transition-colors"
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                </svg>
-                View OxyCapitals Scam Evidence
-              </Link>
+
+            <div className="card p-6 rounded-xl border-2 border-purple-600 bg-purple-950/20">
+              <div className="flex items-center gap-4 mb-4">
+                <div className="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center flex-shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-purple-400">TruCopy</h3>
+                  <p className="text-gray-400 text-sm">$25,000+ stolen (8 chains)</p>
+                </div>
+              </div>
+              
+              <div className="text-center">
+                <Link 
+                  href="/trucopy"
+                  className="inline-flex items-center gap-2 bg-purple-600 hover:bg-purple-700 text-white font-semibold px-4 py-2 rounded-lg transition-colors text-sm"
+                >
+                  View Investigation
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                  </svg>
+                </Link>
+              </div>
             </div>
+          </div>
+
+          <div className="mt-6 card p-4 rounded-xl bg-yellow-950/20 border border-yellow-700/50">
+            <p className="text-yellow-400 text-sm text-center">
+              <strong>Pattern Match:</strong> All three scams use Discord impersonation, fake trading platforms, 
+              and rapid cash-out to exchange wallets. They may be operated by the same criminal network.
+            </p>
           </div>
         </div>
       </section>
@@ -948,7 +962,11 @@ export default function MirrorExpPage() {
           </Link>
           <span className="text-gray-700">|</span>
           <Link href="/oxycapitals" className="text-red-400 hover:underline text-sm">
-            View OxyCapitals Investigation
+            OxyCapitals Investigation
+          </Link>
+          <span className="text-gray-700">|</span>
+          <Link href="/trucopy" className="text-purple-400 hover:underline text-sm">
+            TruCopy Investigation
           </Link>
         </div>
         <nav className="mt-6 text-xs text-gray-600 space-x-4">

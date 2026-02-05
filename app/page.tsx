@@ -17,7 +17,7 @@ export default function Home() {
             </svg>
             <div className="text-center">
               <p className="text-gray-400 text-xs uppercase tracking-wider leading-none">Total Documented Losses</p>
-              <p className="text-red-500 font-black text-lg leading-tight">$62,400+</p>
+              <p className="text-red-500 font-black text-lg leading-tight">$93,200+</p>
             </div>
           </div>
 
@@ -34,7 +34,7 @@ export default function Home() {
           </svg>
           <div className="text-center">
             <p className="text-gray-300 text-xs uppercase tracking-wider leading-none">Total Documented Losses</p>
-            <p className="text-red-500 font-black text-xl leading-tight">$62,400+</p>
+            <p className="text-red-500 font-black text-xl leading-tight">$93,200+</p>
           </div>
         </div>
       </div>
@@ -118,11 +118,11 @@ export default function Home() {
 
           <div className="grid grid-cols-3 gap-3 sm:gap-6">
             <div className="card p-4 sm:p-6 rounded-xl text-center">
-              <div className="text-2xl sm:text-4xl font-black text-red-500 mb-1 sm:mb-2">$62K+</div>
+              <div className="text-2xl sm:text-4xl font-black text-red-500 mb-1 sm:mb-2">$93K+</div>
               <p className="text-gray-400 text-xs sm:text-base">Documented stolen funds</p>
             </div>
             <div className="card p-4 sm:p-6 rounded-xl text-center">
-              <div className="text-2xl sm:text-4xl font-black text-orange-500 mb-1 sm:mb-2">2</div>
+              <div className="text-2xl sm:text-4xl font-black text-orange-500 mb-1 sm:mb-2">3</div>
               <p className="text-gray-400 text-xs sm:text-base">Scam operations exposed</p>
             </div>
             <div className="card p-4 sm:p-6 rounded-xl text-center">
@@ -185,7 +185,7 @@ export default function Home() {
             Click on any investigation to view full blockchain analysis, evidence, and documentation
           </p>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {/* OxyCapitals Card */}
             <Link href="/oxycapitals" className="block">
               <div className="card p-4 sm:p-6 rounded-xl border-2 border-red-600 bg-red-950/20 hover:bg-red-950/30 transition-colors h-full">
@@ -280,6 +280,56 @@ export default function Home() {
                 <div className="flex items-center justify-between gap-2">
                   <p className="text-gray-500 text-xs sm:text-sm">Username typosquatting + fake investment platform</p>
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-orange-400 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                  </svg>
+                </div>
+              </div>
+            </Link>
+
+            {/* TruCopy Card */}
+            <Link href="/trucopy" className="block">
+              <div className="card p-4 sm:p-6 rounded-xl border-2 border-purple-600 bg-purple-950/20 hover:bg-purple-950/30 transition-colors h-full">
+                <div className="flex items-center gap-3 sm:gap-4 mb-3 sm:mb-4">
+                  <div className="w-11 h-11 sm:w-14 sm:h-14 bg-purple-600 rounded-full flex items-center justify-center flex-shrink-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 sm:h-7 sm:w-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                    </svg>
+                  </div>
+                  <div className="min-w-0 flex-1">
+                    <h3 className="text-xl sm:text-2xl font-bold text-purple-400">TruCopy</h3>
+                    <p className="text-gray-400 text-xs sm:text-sm truncate">trucopy.org</p>
+                  </div>
+                  <div className="flex-shrink-0">
+                    <span className="px-2 sm:px-3 py-1 bg-red-600/30 text-red-400 text-xs font-semibold rounded-full border border-red-600">
+                      ACTIVE
+                    </span>
+                  </div>
+                </div>
+                
+                <div className="bg-black/30 rounded-lg p-3 sm:p-4 mb-3 sm:mb-4">
+                  <div className="grid grid-cols-2 gap-3 sm:gap-4 text-xs sm:text-sm">
+                    <div>
+                      <span className="text-gray-500">Total Stolen:</span>
+                      <p className="text-red-400 font-bold text-base sm:text-lg">$30,869+</p>
+                    </div>
+                    <div>
+                      <span className="text-gray-500">Chains:</span>
+                      <p className="text-gray-300">BTC, SOL, ETH + 5 more</p>
+                    </div>
+                    <div>
+                      <span className="text-gray-500">Method:</span>
+                      <p className="text-yellow-400">Discord Impersonation</p>
+                    </div>
+                    <div>
+                      <span className="text-gray-500">Transactions:</span>
+                      <p className="text-gray-300">12 traced</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="flex items-center justify-between gap-2">
+                  <p className="text-gray-500 text-xs sm:text-sm">Multi-chain fraud across BTC, ETH, SOL + more</p>
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-purple-400 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                   </svg>
                 </div>
@@ -411,6 +461,10 @@ export default function Home() {
             <span className="text-gray-700 hidden sm:inline">|</span>
             <Link href="/mirrorexp" className="text-orange-400 hover:text-orange-300 text-sm">
               MirrorExp Investigation
+            </Link>
+            <span className="text-gray-700 hidden sm:inline">|</span>
+            <Link href="/trucopy" className="text-purple-400 hover:text-purple-300 text-sm">
+              TruCopy Investigation
             </Link>
           </div>
           
