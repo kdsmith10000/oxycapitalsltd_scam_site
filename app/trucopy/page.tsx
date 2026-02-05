@@ -288,188 +288,114 @@ export default function TruCopyPage() {
         </div>
       </section>
 
-      {/* Detailed Transaction Tables */}
+      {/* Money Flow Analysis */}
       <section className="py-8 sm:py-12 px-4 border-b border-gray-800">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-xl sm:text-2xl font-bold text-center mb-2">Complete Transaction Records</h2>
-          <p className="text-center text-gray-400 mb-8 text-sm">All transactions traced from deposit to cash-out</p>
-
-          {/* Bitcoin Transactions */}
-          <div className="card rounded-xl overflow-hidden mb-8">
-            <div className="bg-orange-900/30 px-4 py-3 border-b border-orange-700/50 flex items-center gap-3">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-xl sm:text-2xl font-bold text-center mb-2">Blockchain Transaction Analysis</h2>
+          <p className="text-center text-gray-400 mb-8 text-sm">We traced where the stolen funds go on each blockchain</p>
+          
+          {/* Bitcoin Flow */}
+          <div className="card p-6 rounded-xl mb-6 border border-orange-700/50">
+            <h3 className="text-lg font-semibold mb-4 text-center text-orange-400 flex items-center justify-center gap-2">
               <span className="w-3 h-3 bg-orange-400 rounded-full"></span>
-              <h3 className="font-semibold text-orange-400">Bitcoin Transactions — $25,031.80</h3>
-            </div>
-            <div className="overflow-x-auto">
-              <table className="w-full text-sm">
-                <thead className="bg-gray-800/30">
-                  <tr>
-                    <th className="px-4 py-3 text-left text-gray-400">Date</th>
-                    <th className="px-4 py-3 text-left text-gray-400">Time</th>
-                    <th className="px-4 py-3 text-center text-gray-400">Direction</th>
-                    <th className="px-4 py-3 text-right text-gray-400">Amount</th>
-                    <th className="px-4 py-3 text-right text-gray-400">USD</th>
-                    <th className="px-4 py-3 text-left text-gray-400">Counterparty</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-gray-800">
-                  <tr className="hover:bg-gray-800/20">
-                    <td className="px-4 py-3 text-gray-300">Jan 27, 2026</td>
-                    <td className="px-4 py-3 text-gray-400">14:56:18</td>
-                    <td className="px-4 py-3 text-center"><span className="px-2 py-1 bg-green-600/30 text-green-400 text-xs rounded">IN</span></td>
-                    <td className="px-4 py-3 text-right font-mono text-green-400">+0.28364063 BTC</td>
-                    <td className="px-4 py-3 text-right text-green-400">$20,659.17</td>
-                    <td className="px-4 py-3 font-mono text-xs text-gray-400">bc1qsatlp...05c6</td>
-                  </tr>
-                  <tr className="hover:bg-gray-800/20 bg-red-950/10">
-                    <td className="px-4 py-3 text-gray-300">Jan 27, 2026</td>
-                    <td className="px-4 py-3 text-gray-400">16:14:58</td>
-                    <td className="px-4 py-3 text-center"><span className="px-2 py-1 bg-red-600/30 text-red-400 text-xs rounded">OUT</span></td>
-                    <td className="px-4 py-3 text-right font-mono text-red-400">-0.28359662 BTC</td>
-                    <td className="px-4 py-3 text-right text-red-400">$20,655.97</td>
-                    <td className="px-4 py-3 font-mono text-xs text-purple-400">bc1qdqqsq...gl6 ⚡</td>
-                  </tr>
-                  <tr className="hover:bg-gray-800/20">
-                    <td className="px-4 py-3 text-gray-300">Feb 02, 2026</td>
-                    <td className="px-4 py-3 text-gray-400">12:37:23</td>
-                    <td className="px-4 py-3 text-center"><span className="px-2 py-1 bg-green-600/30 text-green-400 text-xs rounded">IN</span></td>
-                    <td className="px-4 py-3 text-right font-mono text-green-400">+0.05999013 BTC</td>
-                    <td className="px-4 py-3 text-right text-green-400">$4,369.42</td>
-                    <td className="px-4 py-3 font-mono text-xs text-gray-400">bc1qsatlp...05c6</td>
-                  </tr>
-                  <tr className="hover:bg-gray-800/20 bg-red-950/10">
-                    <td className="px-4 py-3 text-gray-300">Feb 02, 2026</td>
-                    <td className="px-4 py-3 text-gray-400">19:24:59</td>
-                    <td className="px-4 py-3 text-center"><span className="px-2 py-1 bg-red-600/30 text-red-400 text-xs rounded">OUT</span></td>
-                    <td className="px-4 py-3 text-right font-mono text-red-400">-0.06003414 BTC</td>
-                    <td className="px-4 py-3 text-right text-red-400">$4,372.63</td>
-                    <td className="px-4 py-3 font-mono text-xs text-purple-400">bc1q3lum3...mk3 ⚡</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div className="bg-gray-800/30 px-4 py-2 text-xs text-gray-500">
-              ⚡ = Exchange cash-out address (can be subpoenaed for KYC)
+              Bitcoin Money Flow — $25,031.80
+            </h3>
+            <div className="space-y-4 font-mono text-sm">
+              <div className="text-center p-3 bg-red-900/30 rounded border border-red-700">
+                <div className="text-gray-400 text-xs mb-1">VICTIMS</div>
+                <div className="text-red-400">Multiple wallets sending to scammer</div>
+                <div className="text-gray-500 text-xs mt-1">2 victim deposits ($20,659 + $4,369)</div>
+              </div>
+              <div className="text-center text-2xl text-gray-600">↓</div>
+              <div className="text-center p-3 bg-orange-900/30 rounded border border-orange-700">
+                <div className="text-gray-400 text-xs mb-1">SCAM COLLECTION WALLET</div>
+                <div className="text-orange-400 break-all text-xs sm:text-sm">bc1qkh2g6dz0s5am5tjwc9wjylyj9qdalgq3vwmgtf</div>
+                <div className="text-gray-500 text-xs mt-1">Total: $25,031 (4 transactions)</div>
+              </div>
+              <div className="text-center text-2xl text-gray-600">↓</div>
+              <div className="text-center p-3 bg-blue-900/30 rounded border border-blue-700">
+                <div className="text-gray-400 text-xs mb-1">EXCHANGE CASH-OUT #1</div>
+                <div className="text-blue-400 break-all text-xs sm:text-sm">bc1qdqqsq6y7csd0cr3ye45h9lv8ydh777j2wehgl6</div>
+                <div className="text-gray-500 text-xs mt-1">Received $20,656 • Jan 27, 2026 • <span className="text-green-400">1hr 18min after deposit</span></div>
+              </div>
+              <div className="text-center p-3 bg-blue-900/30 rounded border border-blue-700">
+                <div className="text-gray-400 text-xs mb-1">EXCHANGE CASH-OUT #2</div>
+                <div className="text-blue-400 break-all text-xs sm:text-sm">bc1q3lum3k6q738f3ct76zg47gshz8rn8ggph6smk3</div>
+                <div className="text-gray-500 text-xs mt-1">Received $4,373 • Feb 02, 2026 • <span className="text-green-400">6hrs 47min after deposit</span></div>
+              </div>
             </div>
           </div>
 
-          {/* Solana Transactions */}
-          <div className="card rounded-xl overflow-hidden mb-8">
-            <div className="bg-purple-900/30 px-4 py-3 border-b border-purple-700/50 flex items-center gap-3">
+          {/* Solana Flow */}
+          <div className="card p-6 rounded-xl mb-6 border border-purple-700/50">
+            <h3 className="text-lg font-semibold mb-4 text-center text-purple-400 flex items-center justify-center gap-2">
               <span className="w-3 h-3 bg-purple-400 rounded-full"></span>
-              <h3 className="font-semibold text-purple-400">Solana Transactions — $5,833.09</h3>
+              Solana Money Flow — $5,833.09
+            </h3>
+            <div className="space-y-4 font-mono text-sm">
+              <div className="text-center p-3 bg-red-900/30 rounded border border-red-700">
+                <div className="text-gray-400 text-xs mb-1">VICTIMS (via KYC Exchanges)</div>
+                <div className="text-red-400">Kraken ($3,908) + Coinbase ($1,925)</div>
+                <div className="text-gray-500 text-xs mt-1">🏦 Exchange withdrawals = traceable to KYC accounts</div>
+              </div>
+              <div className="text-center text-2xl text-gray-600">↓</div>
+              <div className="text-center p-3 bg-purple-900/30 rounded border border-purple-700">
+                <div className="text-gray-400 text-xs mb-1">SCAM COLLECTION WALLET</div>
+                <div className="text-purple-400 break-all text-xs sm:text-sm">Cgrr9RgazhDtigGSu3GAYDbCUV3b1KqPPmuhuUqaoxWJ</div>
+                <div className="text-gray-500 text-xs mt-1">Total: $5,833 (5 transactions)</div>
+              </div>
+              <div className="text-center text-2xl text-gray-600">↓</div>
+              <div className="text-center p-3 bg-blue-900/30 rounded border border-blue-700">
+                <div className="text-gray-400 text-xs mb-1">SINGLE CASH-OUT WALLET (All 3 withdrawals)</div>
+                <div className="text-blue-400 break-all text-xs sm:text-sm">7Ab4npbSR7cTi1gKBW6EiUHco5L5HrsCVDRns8j2DiFQ</div>
+                <div className="text-gray-500 text-xs mt-1">Received $5,832 total • <span className="text-green-400">5-12 minutes after each deposit</span></div>
+              </div>
             </div>
-            <div className="overflow-x-auto">
-              <table className="w-full text-sm">
-                <thead className="bg-gray-800/30">
-                  <tr>
-                    <th className="px-4 py-3 text-left text-gray-400">Date</th>
-                    <th className="px-4 py-3 text-left text-gray-400">Time</th>
-                    <th className="px-4 py-3 text-center text-gray-400">Direction</th>
-                    <th className="px-4 py-3 text-right text-gray-400">Amount</th>
-                    <th className="px-4 py-3 text-right text-gray-400">USD</th>
-                    <th className="px-4 py-3 text-left text-gray-400">Counterparty</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-gray-800">
-                  <tr className="hover:bg-gray-800/20 bg-blue-950/10">
-                    <td className="px-4 py-3 text-gray-300">Sep 04, 2025</td>
-                    <td className="px-4 py-3 text-gray-400">04:11:44</td>
-                    <td className="px-4 py-3 text-center"><span className="px-2 py-1 bg-green-600/30 text-green-400 text-xs rounded">IN</span></td>
-                    <td className="px-4 py-3 text-right font-mono text-green-400">+18.78 SOL</td>
-                    <td className="px-4 py-3 text-right text-green-400">$3,908.10</td>
-                    <td className="px-4 py-3 text-xs"><span className="text-blue-400 font-semibold">Kraken Hot Wallet</span> <span className="text-yellow-400">🏦</span></td>
-                  </tr>
-                  <tr className="hover:bg-gray-800/20 bg-red-950/10">
-                    <td className="px-4 py-3 text-gray-300">Sep 04, 2025</td>
-                    <td className="px-4 py-3 text-gray-400">04:17:09</td>
-                    <td className="px-4 py-3 text-center"><span className="px-2 py-1 bg-red-600/30 text-red-400 text-xs rounded">OUT</span></td>
-                    <td className="px-4 py-3 text-right font-mono text-red-400">-0.048 SOL</td>
-                    <td className="px-4 py-3 text-right text-red-400">$9.99</td>
-                    <td className="px-4 py-3 font-mono text-xs text-purple-400">7Ab4npb...DiFQ ⚡</td>
-                  </tr>
-                  <tr className="hover:bg-gray-800/20 bg-red-950/10">
-                    <td className="px-4 py-3 text-gray-300">Sep 04, 2025</td>
-                    <td className="px-4 py-3 text-gray-400">04:23:30</td>
-                    <td className="px-4 py-3 text-center"><span className="px-2 py-1 bg-red-600/30 text-red-400 text-xs rounded">OUT</span></td>
-                    <td className="px-4 py-3 text-right font-mono text-red-400">-18.73 SOL</td>
-                    <td className="px-4 py-3 text-right text-red-400">$3,898.26</td>
-                    <td className="px-4 py-3 font-mono text-xs text-purple-400">7Ab4npb...DiFQ ⚡</td>
-                  </tr>
-                  <tr className="hover:bg-gray-800/20 bg-blue-950/10">
-                    <td className="px-4 py-3 text-gray-300">Sep 04, 2025</td>
-                    <td className="px-4 py-3 text-gray-400">04:32:29</td>
-                    <td className="px-4 py-3 text-center"><span className="px-2 py-1 bg-green-600/30 text-green-400 text-xs rounded">IN</span></td>
-                    <td className="px-4 py-3 text-right font-mono text-green-400">+9.27 SOL</td>
-                    <td className="px-4 py-3 text-right text-green-400">$1,924.99</td>
-                    <td className="px-4 py-3 text-xs"><span className="text-blue-400 font-semibold">Coinbase Hot Wallet</span> <span className="text-yellow-400">🏦</span></td>
-                  </tr>
-                  <tr className="hover:bg-gray-800/20 bg-red-950/10">
-                    <td className="px-4 py-3 text-gray-300">Sep 04, 2025</td>
-                    <td className="px-4 py-3 text-gray-400">08:15:43</td>
-                    <td className="px-4 py-3 text-center"><span className="px-2 py-1 bg-red-600/30 text-red-400 text-xs rounded">OUT</span></td>
-                    <td className="px-4 py-3 text-right font-mono text-red-400">-9.27 SOL</td>
-                    <td className="px-4 py-3 text-right text-red-400">$1,924.18</td>
-                    <td className="px-4 py-3 font-mono text-xs text-purple-400">7Ab4npb...DiFQ ⚡</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div className="bg-purple-900/20 px-4 py-3 text-sm space-y-1">
-              <p className="text-purple-300"><strong>Key Evidence:</strong> All 3 cash-outs went to the SAME address — confirms single operator</p>
-              <p className="text-yellow-300"><strong>🏦 Exchange Funds:</strong> Both deposits came from KYC-verified exchange hot wallets (Kraken &amp; Coinbase)</p>
+            <div className="mt-4 bg-yellow-900/20 p-3 rounded-lg text-center">
+              <p className="text-yellow-400 text-xs sm:text-sm">
+                <strong>Key Evidence:</strong> All 3 cash-outs went to the SAME address — confirms single operator
+              </p>
             </div>
           </div>
 
-          {/* Ethereum Transactions */}
-          <div className="card rounded-xl overflow-hidden">
-            <div className="bg-blue-900/30 px-4 py-3 border-b border-blue-700/50 flex items-center gap-3">
+          {/* Ethereum Flow */}
+          <div className="card p-6 rounded-xl mb-6 border border-blue-700/50">
+            <h3 className="text-lg font-semibold mb-4 text-center text-blue-400 flex items-center justify-center gap-2">
               <span className="w-3 h-3 bg-blue-400 rounded-full"></span>
-              <h3 className="font-semibold text-blue-400">Ethereum Transactions — $5.01</h3>
+              Ethereum Money Flow — $5.01
+            </h3>
+            <div className="space-y-4 font-mono text-sm">
+              <div className="text-center p-3 bg-red-900/30 rounded border border-red-700">
+                <div className="text-gray-400 text-xs mb-1">VICTIM</div>
+                <div className="text-red-400">0.00234 ETH deposit</div>
+              </div>
+              <div className="text-center text-2xl text-gray-600">↓</div>
+              <div className="text-center p-3 bg-blue-900/30 rounded border border-blue-700">
+                <div className="text-gray-400 text-xs mb-1">SCAM COLLECTION WALLET</div>
+                <div className="text-blue-400 break-all text-xs sm:text-sm">0x3fb847c3fb6e8bc02b18e7af663a1eaa06e42529</div>
+                <div className="text-gray-500 text-xs mt-1">Total: $5.01 (3 transactions)</div>
+              </div>
+              <div className="text-center text-2xl text-gray-600">↓</div>
+              <div className="text-center p-3 bg-yellow-900/30 rounded border border-yellow-700">
+                <div className="text-gray-400 text-xs mb-1">DEX SWAP (Laundering)</div>
+                <div className="text-yellow-400 break-all text-xs sm:text-sm">0x69460570c93f9de5e2edbc3052bf10125f0ca22d</div>
+                <div className="text-gray-500 text-xs mt-1">Received $2.51 via on-chain swap • <span className="text-green-400">22 minutes after deposit</span></div>
+              </div>
             </div>
-            <div className="overflow-x-auto">
-              <table className="w-full text-sm">
-                <thead className="bg-gray-800/30">
-                  <tr>
-                    <th className="px-4 py-3 text-left text-gray-400">Date</th>
-                    <th className="px-4 py-3 text-left text-gray-400">Time</th>
-                    <th className="px-4 py-3 text-center text-gray-400">Direction</th>
-                    <th className="px-4 py-3 text-right text-gray-400">Amount</th>
-                    <th className="px-4 py-3 text-right text-gray-400">USD</th>
-                    <th className="px-4 py-3 text-left text-gray-400">Method</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-gray-800">
-                  <tr className="hover:bg-gray-800/20">
-                    <td className="px-4 py-3 text-gray-300">Feb 04, 2026</td>
-                    <td className="px-4 py-3 text-gray-400">21:38:35</td>
-                    <td className="px-4 py-3 text-center"><span className="px-2 py-1 bg-green-600/30 text-green-400 text-xs rounded">IN</span></td>
-                    <td className="px-4 py-3 text-right font-mono text-green-400">+0.00234 ETH</td>
-                    <td className="px-4 py-3 text-right text-green-400">$5.01</td>
-                    <td className="px-4 py-3 text-gray-400">Transfer</td>
-                  </tr>
-                  <tr className="hover:bg-gray-800/20 bg-red-950/10">
-                    <td className="px-4 py-3 text-gray-300">Feb 04, 2026</td>
-                    <td className="px-4 py-3 text-gray-400">22:00:23</td>
-                    <td className="px-4 py-3 text-center"><span className="px-2 py-1 bg-red-600/30 text-red-400 text-xs rounded">OUT</span></td>
-                    <td className="px-4 py-3 text-right font-mono text-red-400">-0.00117 ETH</td>
-                    <td className="px-4 py-3 text-right text-red-400">$2.51</td>
-                    <td className="px-4 py-3 text-yellow-400">On Chain Swap ⚡</td>
-                  </tr>
-                  <tr className="hover:bg-gray-800/20">
-                    <td className="px-4 py-3 text-gray-300">Feb 05, 2026</td>
-                    <td className="px-4 py-3 text-gray-400">00:35:11</td>
-                    <td className="px-4 py-3 text-center"><span className="px-2 py-1 bg-green-600/30 text-green-400 text-xs rounded">IN</span></td>
-                    <td className="px-4 py-3 text-right font-mono text-green-400">+0.000000001 ETH</td>
-                    <td className="px-4 py-3 text-right text-gray-500">~$0</td>
-                    <td className="px-4 py-3 text-gray-500">Dust</td>
-                  </tr>
-                </tbody>
-              </table>
+            <div className="mt-4 bg-blue-900/20 p-3 rounded-lg text-center">
+              <p className="text-blue-300 text-xs sm:text-sm">
+                <strong>Note:</strong> Used DEX swap for laundering — more sophisticated than direct transfer
+              </p>
             </div>
-            <div className="bg-blue-900/20 px-4 py-3 text-sm">
-              <p className="text-blue-300"><strong>Note:</strong> Used DEX swap for laundering — more sophisticated than direct transfer</p>
-            </div>
+          </div>
+
+          {/* Summary Stats */}
+          <div className="card p-4 rounded-xl text-center bg-gray-800/50 border border-gray-700">
+            <p className="text-gray-300 text-sm">
+              <span className="font-semibold">12 transactions</span> across 3 blockchains &bull; 
+              <span className="text-red-400 font-semibold"> 100% cashed out</span> within hours &bull; 
+              All funds traced to exchange wallets
+            </p>
           </div>
         </div>
       </section>
