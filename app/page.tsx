@@ -7,22 +7,26 @@ export default function Home() {
     <main className="min-h-screen" itemScope itemType="https://schema.org/Organization">
       {/* Top Navigation Bar */}
       <nav className="bg-gradient-to-r from-red-950 to-purple-950 border-b border-red-800 sticky top-0 z-40">
-        <div className="max-w-6xl mx-auto px-3 sm:px-4 py-2 sm:py-3 flex items-center justify-between gap-2">
+        <div className="max-w-6xl mx-auto px-3 sm:px-4 py-2 sm:py-3 grid grid-cols-3 items-center gap-2">
+          {/* Left - Site Name */}
           <span className="text-red-400 font-bold text-xs sm:text-sm uppercase tracking-wider whitespace-nowrap">Dirty Crypto</span>
           
-          {/* Total Loss Counter - Hidden on mobile, shown on tablet+ */}
-          <div className="hidden md:flex items-center gap-2 bg-black/40 px-4 py-2 rounded-lg border border-red-700/50">
+          {/* Center - Total Loss Counter (Hidden on mobile, shown on tablet+) */}
+          <div className="hidden md:flex items-center justify-center gap-2 bg-black/40 px-4 py-2 rounded-lg border border-red-700/50 mx-auto">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
             <div className="text-center">
               <p className="text-gray-400 text-xs uppercase tracking-wider leading-none">Total Documented Losses</p>
-              <p className="text-red-500 font-black text-lg leading-tight">$93,200+</p>
+              <p className="text-red-500 font-black text-lg leading-tight">$114,800+</p>
             </div>
           </div>
 
-          <span className="text-red-500 font-bold text-xs sm:text-sm uppercase tracking-wider whitespace-nowrap hidden sm:inline">Scam Exposure Network</span>
-          <span className="text-red-500 font-bold text-xs uppercase tracking-wider sm:hidden">Scam Alert</span>
+          {/* Right - Tagline */}
+          <div className="text-right">
+            <span className="text-red-500 font-bold text-xs sm:text-sm uppercase tracking-wider whitespace-nowrap hidden sm:inline">Scam Exposure Network</span>
+            <span className="text-red-500 font-bold text-xs uppercase tracking-wider sm:hidden">Scam Alert</span>
+          </div>
         </div>
       </nav>
 
@@ -34,7 +38,7 @@ export default function Home() {
           </svg>
           <div className="text-center">
             <p className="text-gray-300 text-xs uppercase tracking-wider leading-none">Total Documented Losses</p>
-            <p className="text-red-500 font-black text-xl leading-tight">$93,200+</p>
+            <p className="text-red-500 font-black text-xl leading-tight">$114,800+</p>
           </div>
         </div>
       </div>
