@@ -11,14 +11,27 @@ export default function Home() {
           {/* Left - Site Name */}
           <span className="text-red-400 font-bold text-xs sm:text-sm uppercase tracking-wider whitespace-nowrap">Dirty Crypto</span>
           
-          {/* Center - Total Loss Counter (Hidden on mobile, shown on tablet+) */}
-          <div className="hidden md:flex items-center justify-center gap-2 bg-black/40 px-4 py-2 rounded-lg border border-red-700/50 mx-auto">
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
-            <div className="text-center">
-              <p className="text-gray-400 text-xs uppercase tracking-wider leading-none">Total Documented Losses</p>
-              <p className="text-red-500 font-black text-lg leading-tight">$114,800+</p>
+          {/* Center - Stats Counter (Hidden on mobile, shown on tablet+) */}
+          <div className="hidden md:flex items-center justify-center gap-4 mx-auto">
+            {/* Loss Counter */}
+            <div className="flex items-center gap-2 bg-black/40 px-4 py-2 rounded-lg border border-red-700/50">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <div className="text-center">
+                <p className="text-gray-400 text-xs uppercase tracking-wider leading-none">Total Losses</p>
+                <p className="text-red-500 font-black text-lg leading-tight">$114,800+</p>
+              </div>
+            </div>
+            {/* Victim Counter */}
+            <div className="flex items-center gap-2 bg-black/40 px-4 py-2 rounded-lg border border-yellow-700/50">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+              </svg>
+              <div className="text-center">
+                <p className="text-gray-400 text-xs uppercase tracking-wider leading-none">Est. Victims</p>
+                <p className="text-yellow-500 font-black text-lg leading-tight">50+</p>
+              </div>
             </div>
           </div>
 
@@ -30,15 +43,28 @@ export default function Home() {
         </div>
       </nav>
 
-      {/* Mobile Loss Counter Banner - Shown only on mobile */}
+      {/* Mobile Stats Banner - Shown only on mobile */}
       <div className="md:hidden bg-gradient-to-r from-red-950/80 to-purple-950/80 border-b border-red-700/50 py-3 px-4">
-        <div className="flex items-center justify-center gap-3">
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-red-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-          </svg>
-          <div className="text-center">
-            <p className="text-gray-300 text-xs uppercase tracking-wider leading-none">Total Documented Losses</p>
-            <p className="text-red-500 font-black text-xl leading-tight">$114,800+</p>
+        <div className="flex items-center justify-center gap-6">
+          {/* Loss Counter */}
+          <div className="flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-red-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <div className="text-center">
+              <p className="text-gray-400 text-xs uppercase tracking-wider leading-none">Losses</p>
+              <p className="text-red-500 font-black text-lg leading-tight">$114.8K+</p>
+            </div>
+          </div>
+          {/* Victim Counter */}
+          <div className="flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-yellow-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+            </svg>
+            <div className="text-center">
+              <p className="text-gray-400 text-xs uppercase tracking-wider leading-none">Victims</p>
+              <p className="text-yellow-500 font-black text-lg leading-tight">50+</p>
+            </div>
           </div>
         </div>
       </div>
