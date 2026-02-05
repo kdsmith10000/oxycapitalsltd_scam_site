@@ -1,0 +1,12 @@
+{
+    "balance": {
+        "scripthash": "5e812bb630a179cc0651a60fc4ed5709bd559135bc125313f4c5cd7d90e74858",
+        "confirmed": 0,
+        "unconfirmed": 0,
+        "summary": 0,
+        "count": 0
+    },
+    "transactionsCount": 0,
+    "totalReceive": 0,
+    "totalSent": 0
+}

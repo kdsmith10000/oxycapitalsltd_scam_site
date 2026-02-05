@@ -46,3 +46,125 @@ All funds into the SOL scam wallet came from KYC-verified exchanges:
 
 ## Total Documented Losses: $30,869.90
 
+---
+
+## Victim Analysis
+
+### Estimated Victim Count: 2-4 unique victims
+
+| Chain | Unique Depositing Wallets | Total Value Lost |
+|-------|--------------------------|------------------|
+| BTC | 1 (same wallet, 2 deposits) | ~$25,028 |
+| SOL | 2 (exchange hot wallets) | ~$5,833 |
+| ETH | 1 | ~$5 |
+| **Total** | **3-4** | **~$30,866** |
+
+**Key observations:**
+- The BTC victim made 2 deposits from the same wallet (6 days apart) — classic "reload" scam tactic
+- SOL deposits came through Coinbase and Kraken hot wallets (could be 1-2 victims)
+- ETH deposit was minimal (~$5), possibly a test transaction
+
+---
+
+## Additional Forensic Evidence for Law Enforcement
+
+### 1. Cash-Out Velocity Pattern — Proves Active Monitoring
+
+| Transaction | Deposit Time | Cash-Out Time | Velocity |
+|-------------|--------------|---------------|----------|
+| SOL #1 (Kraken) | 04:11:44 UTC | 04:17:09 UTC | **5 minutes 25 seconds** |
+| SOL #2 (Coinbase) | 04:32:29 UTC | 08:15:43 UTC | **3 hours 43 minutes** |
+| ETH | 21:38:35 UTC | 22:00:23 UTC | **22 minutes** |
+| BTC #1 | 14:56:18 UTC | 16:14:58 UTC | **1 hour 18 minutes** |
+
+**Evidence value:** The 5-minute SOL cash-out proves **real-time wallet monitoring**. Scammer was actively online and ready.
+
+### 2. Single SOL Consolidation Wallet
+
+All 3 SOL outbound transactions went to the **same destination**:
+```
+7Ab4npbSR7cTi1gKBW6EiUHco5L5HrsCVDRns8j2DiFQ
+```
+**Evidence value:** Proves **single operator** or organization.
+
+### 3. BTC Victim Pattern — Same Source, Multiple Deposits
+
+Both BTC deposits came from the **identical wallet**:
+```
+bc1qsatlphjcgvzlt9xhsgn0dnjus5jgwg83dr05c6
+```
+
+| Date | Amount | USD Value |
+|------|--------|-----------|
+| Jan 27, 2026 | 0.28364 BTC | $20,659 |
+| Feb 02, 2026 | 0.05999 BTC | $4,369 |
+
+**Evidence value:** Single victim convinced to send twice — "reload" scam tactic. Victim's wallet can be traced for testimony.
+
+### 4. DEX Swap Laundering (ETH)
+
+ETH moved via **"On Chain Swap"** to:
+```
+0x69460570c93f9de5e2edbc3052bf10125f0ca22d
+```
+**Evidence value:** More sophisticated than direct transfer — indicates awareness of chain analysis tools.
+
+### 5. Discord Account Metadata
+
+| Attribute | Fake Account | Real Account |
+|-----------|--------------|--------------|
+| Username | `_salma_ogs` | `salmaogs` |
+| Member Since | **Jul 20, 2025** | Jun 12, 2020 |
+| Mutual Servers | 0 | 1 |
+| Account Age | ~6 months | ~5.5 years |
+
+**Evidence value:** 
+- Discord account creation (Jul 2025) provides **timestamp for operation start**
+- Discord can be subpoenaed for IP addresses, email, payment methods, session logs
+
+### 6. Cross-Scam Pattern — Possible Same Operator
+
+TruCopy shares identical methodology with MirrorExp and OxyCapitals:
+
+| Pattern | TruCopy | MirrorExp | OxyCapitals |
+|---------|---------|-----------|-------------|
+| Discord impersonation | ✓ | ✓ | ✓ |
+| Fake trading platform | ✓ | ✓ | ✓ |
+| Multi-chain wallets | 8 chains | 4 chains | 3 chains |
+| Rapid cash-out (<24h) | ✓ | ✓ | ✓ |
+
+**Combined losses across all three scams: $114,000+**
+
+### 7. Operational Timeline
+
+```
+Jul 20, 2025 — Fake Discord account "_salma_ogs" created
+Sep 04, 2025 — SOL deposits and cash-out (earliest blockchain activity)
+Jan 27, 2026 — First BTC deposit from victim
+Feb 02, 2026 — Second BTC deposit (same victim, "reload")
+Feb 04, 2026 — ETH deposit and immediate DEX swap
+```
+
+---
+
+## Subpoena Priority List
+
+| Priority | Target | Data Available |
+|----------|--------|----------------|
+| 1 | **Discord** | IP logs, email, payment info for `_salma_ogs` account created Jul 20, 2025 |
+| 2 | **Kraken** | KYC for withdrawal to `Cgrr9RgazhDtigGSu3GAYDbCUV3b1KqPPmuhuUqaoxWJ` on Sep 04, 2025 04:11:44 UTC |
+| 3 | **Coinbase** | KYC for withdrawal to `Cgrr9RgazhDtigGSu3GAYDbCUV3b1KqPPmuhuUqaoxWJ` on Sep 04, 2025 04:32:29 UTC |
+| 4 | **Exchange holding `7Ab4npbSR7cTi1gKBW6EiUHco5L5HrsCVDRns8j2DiFQ`** | SOL cash-out wallet KYC |
+| 5 | **Exchange holding `bc1qdqqsq6y7csd0cr3ye45h9lv8ydh777j2wehgl6`** | BTC cash-out wallet KYC ($20.6K) |
+| 6 | **Exchange holding `bc1q3lum3k6q738f3ct76zg47gshz8rn8ggph6smk3`** | BTC cash-out wallet KYC ($4.3K) |
+
+---
+
+## Summary: Strongest Evidence Points
+
+1. **Discord account creation timestamp** — Jul 20, 2025 proves premeditation
+2. **5-minute cash-out velocity** — proves real-time monitoring/coordination
+3. **Single SOL destination wallet** — proves single operator
+4. **Same BTC victim, two deposits** — proves "reload" scam technique
+5. **Cross-scam pattern match** — may link to larger criminal network ($114K+ combined thefts)
+
