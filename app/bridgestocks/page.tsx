@@ -54,6 +54,21 @@ export default function BridgeStocksPage() {
         </div>
       </section>
 
+      {/* Cartoon Section */}
+      <section className="py-8 px-4 border-b border-gray-800 bg-gradient-to-b from-purple-950/20 to-transparent">
+        <div className="max-w-2xl mx-auto text-center">
+          <div className="card rounded-2xl overflow-hidden border-2 border-purple-600/50 shadow-lg shadow-purple-900/20">
+            <img 
+              src="/evidence/bridgestocks/cartoon.png" 
+              alt="Cartoon illustrating how the BridgeStocks crypto scam operates through Discord impersonation and fake trading platforms" 
+              className="w-full cursor-zoom-in hover:scale-[1.02] transition-transform"
+              onClick={() => openLightbox('/evidence/bridgestocks/cartoon.png')}
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+
       {/* Chainabuse Report Success */}
       <section className="py-6 sm:py-8 px-4 border-b border-gray-800 bg-green-950/30">
         <div className="max-w-4xl mx-auto">
