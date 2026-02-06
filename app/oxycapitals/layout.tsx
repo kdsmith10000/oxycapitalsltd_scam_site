@@ -42,9 +42,9 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: `${baseUrl}/oxycapitals`,
     siteName: 'Dirty Crypto Scams',
-    images: [
+      images: [
       {
-        url: `${baseUrl}/evidence/scam homepage.jpg`,
+        url: `${baseUrl}/evidence/scam%20homepage.jpg`,
         width: 1200,
         height: 630,
         alt: 'OxyCapitals Scam Website - Fake Crypto Trading Platform Evidence',
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'OxyCapitals Scam - $40,400+ Stolen via Discord Impersonation',
     description: 'Exposing OxyCapitalsLtd.com crypto scam with blockchain evidence. Impersonation attack documented.',
-    images: [`${baseUrl}/evidence/scam homepage.jpg`],
+    images: [`${baseUrl}/evidence/scam%20homepage.jpg`],
   },
   alternates: {
     canonical: `${baseUrl}/oxycapitals`,
@@ -66,6 +66,14 @@ export const metadata: Metadata = {
 const oxyCapitalsJsonLd = {
   '@context': 'https://schema.org',
   '@graph': [
+    {
+      '@type': 'BreadcrumbList',
+      '@id': `${baseUrl}/oxycapitals#breadcrumb`,
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Dirty Crypto', item: baseUrl },
+        { '@type': 'ListItem', position: 2, name: 'OxyCapitals Scam Investigation', item: `${baseUrl}/oxycapitals` },
+      ],
+    },
     {
       '@type': 'Article',
       '@id': `${baseUrl}/oxycapitals#article`,

@@ -1,0 +1,28 @@
+{
+  "name": "Dirty Crypto - Exposing Crypto Scams",
+  "short_name": "Dirty Crypto",
+  "description": "Exposing cryptocurrency scams through blockchain analysis. $150,200+ in documented losses across 6 scam operations.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f0f14",
+  "theme_color": "#dc2626",
+  "orientation": "portrait-primary",
+  "categories": ["security", "finance", "news"],
+  "icons": [
+    {
+      "src": "/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

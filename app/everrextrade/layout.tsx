@@ -49,6 +49,14 @@ const everrexTradeJsonLd = {
   '@context': 'https://schema.org',
   '@graph': [
     {
+      '@type': 'BreadcrumbList',
+      '@id': `${baseUrl}/everrextrade#breadcrumb`,
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Dirty Crypto', item: baseUrl },
+        { '@type': 'ListItem', position: 2, name: 'EverrexTrade Scam Investigation', item: `${baseUrl}/everrextrade` },
+      ],
+    },
+    {
       '@type': 'Article',
       '@id': `${baseUrl}/everrextrade#article`,
       headline: 'EverrexTrade Scam Exposed - Fake Forex Trading Platform Using Discord Impersonation',

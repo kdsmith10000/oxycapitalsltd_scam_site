@@ -2,49 +2,48 @@ import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://dirtycrypto.org'
-  const currentDate = new Date()
   
   return [
     {
       url: baseUrl,
-      lastModified: currentDate,
+      lastModified: new Date('2026-02-05'),
       changeFrequency: 'daily',
       priority: 1,
     },
     {
       url: `${baseUrl}/oxycapitals`,
-      lastModified: currentDate,
-      changeFrequency: 'daily',
+      lastModified: new Date('2026-02-04'),
+      changeFrequency: 'weekly',
       priority: 0.9,
     },
     {
       url: `${baseUrl}/mirrorexp`,
-      lastModified: currentDate,
-      changeFrequency: 'daily',
+      lastModified: new Date('2026-02-04'),
+      changeFrequency: 'weekly',
       priority: 0.9,
     },
     {
       url: `${baseUrl}/trucopy`,
-      lastModified: currentDate,
-      changeFrequency: 'daily',
+      lastModified: new Date('2026-02-04'),
+      changeFrequency: 'weekly',
       priority: 0.9,
     },
     {
       url: `${baseUrl}/bridgestocks`,
-      lastModified: currentDate,
+      lastModified: new Date('2026-02-05'),
       changeFrequency: 'weekly',
       priority: 0.9,
     },
     {
       url: `${baseUrl}/everrextrade`,
-      lastModified: currentDate,
-      changeFrequency: 'daily',
-      priority: 0.9,
+      lastModified: new Date('2026-02-05'),
+      changeFrequency: 'weekly',
+      priority: 0.85,
     },
     {
       url: `${baseUrl}/affluenceaura`,
-      lastModified: currentDate,
-      changeFrequency: 'weekly',
+      lastModified: new Date('2026-02-05'),
+      changeFrequency: 'monthly',
       priority: 0.8,
     },
   ]

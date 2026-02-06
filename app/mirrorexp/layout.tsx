@@ -65,6 +65,14 @@ const mirrorExpJsonLd = {
   '@context': 'https://schema.org',
   '@graph': [
     {
+      '@type': 'BreadcrumbList',
+      '@id': `${baseUrl}/mirrorexp#breadcrumb`,
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Dirty Crypto', item: baseUrl },
+        { '@type': 'ListItem', position: 2, name: 'MirrorExp Scam Investigation', item: `${baseUrl}/mirrorexp` },
+      ],
+    },
+    {
       '@type': 'Article',
       '@id': `${baseUrl}/mirrorexp#article`,
       headline: 'MirrorExp Scam Exposed - $22,000+ Stolen via Typosquatting Attack',

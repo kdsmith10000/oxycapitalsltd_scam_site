@@ -53,6 +53,14 @@ const truCopyJsonLd = {
   '@context': 'https://schema.org',
   '@graph': [
     {
+      '@type': 'BreadcrumbList',
+      '@id': `${baseUrl}/trucopy#breadcrumb`,
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Dirty Crypto', item: baseUrl },
+        { '@type': 'ListItem', position: 2, name: 'TruCopy Scam Investigation', item: `${baseUrl}/trucopy` },
+      ],
+    },
+    {
       '@type': 'Article',
       '@id': `${baseUrl}/trucopy#article`,
       headline: 'TruCopy Scam Exposed - $25,000+ Stolen via Multi-Chain Discord Impersonation',

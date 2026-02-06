@@ -1,10 +1,8 @@
-'use client'
-
 import Link from 'next/link'
 
 export default function Home() {
   return (
-    <main className="min-h-screen" itemScope itemType="https://schema.org/Organization">
+    <main className="min-h-screen" itemScope itemType="https://schema.org/Organization" role="main">
       {/* Top Navigation Bar */}
       <nav className="bg-gradient-to-r from-red-950 to-purple-950 border-b border-red-800 sticky top-0 z-40">
         <div className="max-w-6xl mx-auto px-3 sm:px-4 py-2 sm:py-3 grid grid-cols-3 items-center gap-2">
@@ -70,14 +68,14 @@ export default function Home() {
       </div>
 
       {/* Hero Section - About Dirty Crypto */}
-      <section className="relative py-12 sm:py-20 px-4 text-center border-b border-red-900/50 bg-gradient-to-b from-red-950/30 to-transparent">
+      <section className="relative py-12 sm:py-20 px-4 text-center border-b border-red-900/50 bg-gradient-to-b from-red-950/30 to-transparent" aria-label="About Dirty Crypto">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl sm:text-5xl md:text-7xl font-black mb-4 sm:mb-6" itemProp="name">
             <span className="gradient-text">Dirty Crypto</span>
           </h1>
-          <p className="text-xl sm:text-2xl text-gray-300 mb-4 sm:mb-6 font-semibold" itemProp="description">
+          <h2 className="text-xl sm:text-2xl text-gray-300 mb-4 sm:mb-6 font-semibold" itemProp="description">
             Exposing Crypto Scams Through Blockchain Analysis
-          </p>
+          </h2>
           <p className="text-base sm:text-lg text-gray-400 mb-6 sm:mb-8 max-w-3xl mx-auto leading-relaxed px-2">
             We investigate cryptocurrency fraud by tracing stolen funds across blockchains, documenting scam operations, 
             and providing evidence that helps victims and law enforcement pursue justice. Our mission is to expose scammers, 
@@ -123,7 +121,7 @@ export default function Home() {
       </section>
 
       {/* Our Mission */}
-      <section className="py-10 sm:py-16 px-4 border-b border-gray-800">
+      <section className="py-10 sm:py-16 px-4 border-b border-gray-800" aria-label="Our Mission">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-2xl sm:text-3xl font-bold text-center mb-6 sm:mb-8">Our Mission</h2>
           
@@ -164,7 +162,7 @@ export default function Home() {
       </section>
 
       {/* What We Do */}
-      <section className="py-10 sm:py-16 px-4 border-b border-gray-800 bg-gray-900/30">
+      <section className="py-10 sm:py-16 px-4 border-b border-gray-800 bg-gray-900/30" aria-label="What We Do">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-2xl sm:text-3xl font-bold text-center mb-3 sm:mb-4">What We Do</h2>
           <p className="text-center text-gray-400 mb-8 sm:mb-12 max-w-2xl mx-auto text-sm sm:text-base">
@@ -208,7 +206,7 @@ export default function Home() {
       </section>
 
       {/* Exposed Scams */}
-      <section className="py-10 sm:py-16 px-4 border-b border-gray-800">
+      <section className="py-10 sm:py-16 px-4 border-b border-gray-800" aria-label="Exposed Scam Operations">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-2xl sm:text-3xl font-bold text-center mb-3 sm:mb-4">Exposed Scam Operations</h2>
           <p className="text-center text-gray-400 mb-8 sm:mb-12 max-w-2xl mx-auto text-sm sm:text-base">
@@ -520,7 +518,7 @@ export default function Home() {
       </section>
 
       {/* How Blockchain Analysis Helps */}
-      <section className="py-10 sm:py-16 px-4 border-b border-gray-800 bg-gradient-to-b from-blue-950/20 to-transparent">
+      <section className="py-10 sm:py-16 px-4 border-b border-gray-800 bg-gradient-to-b from-blue-950/20 to-transparent" aria-label="How Blockchain Analysis Delivers Justice">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-2xl sm:text-3xl font-bold text-center mb-3 sm:mb-4">How Blockchain Analysis Delivers Justice</h2>
           <p className="text-center text-gray-400 mb-8 sm:mb-12 max-w-2xl mx-auto text-sm sm:text-base">
@@ -584,7 +582,7 @@ export default function Home() {
       </section>
 
       {/* Warning Section */}
-      <section className="py-8 sm:py-12 px-4 border-b border-gray-800 bg-red-950/30">
+      <section className="py-8 sm:py-12 px-4 border-b border-gray-800 bg-red-950/30" aria-label="Protect Yourself From Crypto Scams">
         <div className="max-w-4xl mx-auto">
           <div className="card p-4 sm:p-8 rounded-2xl bg-red-900/30 border-2 border-red-600">
             <h2 className="text-xl sm:text-2xl font-bold text-red-400 mb-4 text-center">Protect Yourself From Crypto Scams</h2>
@@ -660,7 +658,7 @@ export default function Home() {
             </Link>
           </div>
           
-          <p className="text-xs text-gray-600">Last updated: February 2026</p>
+          <p className="text-xs text-gray-600">Last updated: <time dateTime="2026-02-05">February 5, 2026</time></p>
         </div>
       </footer>
     </main>

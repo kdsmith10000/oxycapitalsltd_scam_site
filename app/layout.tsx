@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     default: 'Dirty Crypto - Exposing Crypto Scams Through Blockchain Analysis',
     template: '%s | Dirty Crypto',
   },
-  description: 'Dirty Crypto investigates cryptocurrency fraud through blockchain analysis, exposing scams and helping victims get justice. OxyCapitals, MirrorExp, TruCopy and other crypto frauds documented with wallet addresses, transaction tracing, and evidence for law enforcement. $114,800+ in documented losses.',
+  description: 'Dirty Crypto investigates cryptocurrency fraud through blockchain analysis, exposing scams and helping victims get justice. OxyCapitals, MirrorExp, TruCopy, BridgeStocks, EverrexTrade, and AffluenceAura crypto frauds documented with wallet addresses, transaction tracing, and evidence for law enforcement. $150,200+ in documented losses across 6 scam operations.',
   keywords: [
     // Brand/Domain keywords
     'dirty crypto',
@@ -32,23 +32,36 @@ export const metadata: Metadata = {
     'oxycapitalsltd.com scam',
     'oxycapitals review',
     'is oxycapitals legit',
+    'is oxycapitals a scam',
     'oxycapitals fraud',
     'mirrorexp scam',
     'mirrorexp.com scam',
     'mirror exp scam',
     'mirrorexp review',
     'is mirrorexp legit',
+    'is mirrorexp a scam',
     'mirrorexp fraud',
     'bridgestocks scam',
     'bridgestocks.com scam',
+    'is bridgestocks legit',
+    'is bridgestocks a scam',
+    'bridgestocks review',
+    'trucopy scam',
+    'trucopy.org scam',
+    'is trucopy legit',
+    'is trucopy a scam',
+    'trucopy review',
     'everrextrade scam',
     'everrextrade.com scam',
     'everrex trade scam',
     'is everrextrade legit',
+    'is everrextrade a scam',
+    'everrextrade review',
     'affluenceaura scam',
     'affluenceaura.com scam',
     'affluence aura scam',
     'is affluenceaura legit',
+    'is affluenceaura a scam',
     'affluenceaura review',
     'v12hosting scam',
     // Scammer usernames
@@ -138,25 +151,25 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Dirty Crypto - Exposing Crypto Scams Through Blockchain Analysis',
-    description: 'We investigate cryptocurrency fraud by tracing stolen funds across blockchains. $114,800+ documented losses from OxyCapitals, MirrorExp & TruCopy scams. Fighting for justice for scam victims.',
+    description: 'We investigate cryptocurrency fraud by tracing stolen funds across blockchains. $150,200+ documented losses from OxyCapitals, MirrorExp, TruCopy, BridgeStocks & more. 6 scam operations exposed with blockchain evidence.',
     type: 'website',
     locale: 'en_US',
     url: baseUrl,
     siteName: 'Dirty Crypto',
     images: [
       {
-        url: `${baseUrl}/evidence/scam homepage.jpg`,
+        url: `${baseUrl}/evidence/scam%20homepage.jpg`,
         width: 1200,
         height: 630,
-        alt: 'Dirty Crypto - Exposing Cryptocurrency Fraud Through Blockchain Analysis',
+        alt: 'Dirty Crypto - Exposing Cryptocurrency Fraud Through Blockchain Analysis - $150,200+ in documented losses',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Dirty Crypto - Exposing Crypto Scams Through Blockchain Analysis',
-    description: 'Investigating cryptocurrency fraud through blockchain analysis. $114,800+ in documented losses. Fighting for justice.',
-    images: [`${baseUrl}/evidence/scam homepage.jpg`],
+    description: 'Investigating cryptocurrency fraud through blockchain analysis. $150,200+ in documented losses across 6 scam operations. Fighting for justice.',
+    images: [`${baseUrl}/evidence/scam%20homepage.jpg`],
     creator: '@dirtycrypto',
   },
   alternates: {
@@ -184,7 +197,7 @@ const jsonLd = {
       '@id': 'https://dirtycrypto.org/#website',
       url: 'https://dirtycrypto.org',
       name: 'Dirty Crypto',
-      description: 'Exposing cryptocurrency scams through blockchain analysis. Investigating fraud, tracing stolen funds, and fighting for justice for scam victims.',
+      description: 'Exposing cryptocurrency scams through blockchain analysis. Investigating fraud, tracing stolen funds, and fighting for justice for scam victims. $150,200+ in documented losses across 6 scam operations.',
       publisher: { '@id': 'https://dirtycrypto.org/#organization' },
       potentialAction: {
         '@type': 'SearchAction',
@@ -209,7 +222,7 @@ const jsonLd = {
       '@id': 'https://dirtycrypto.org/#webpage',
       url: 'https://dirtycrypto.org',
       name: 'Dirty Crypto - Exposing Crypto Scams Through Blockchain Analysis',
-      description: 'We investigate cryptocurrency fraud by tracing stolen funds across blockchains. OxyCapitals, MirrorExp, TruCopy and other scams documented with $114,800+ in losses.',
+      description: 'We investigate cryptocurrency fraud by tracing stolen funds across blockchains. OxyCapitals, MirrorExp, TruCopy, BridgeStocks, EverrexTrade, and AffluenceAura scams documented with $150,200+ in losses.',
       isPartOf: { '@id': 'https://dirtycrypto.org/#website' },
       about: {
         '@type': 'Thing',
@@ -233,17 +246,17 @@ const jsonLd = {
     {
       '@type': 'Article',
       '@id': 'https://dirtycrypto.org/#article',
-      headline: 'SCAM ALERT: OxyCapitals, MirrorExp & TruCopy Cryptocurrency Fraud Exposed - $114,800+ Stolen',
-      description: 'Complete investigation exposing the OxyCapitals, MirrorExp, and TruCopy cryptocurrency scams, including blockchain transaction analysis, wallet addresses, typosquatting tactics, and money laundering evidence.',
-      image: 'https://dirtycrypto.org/evidence/scam homepage.jpg',
+      headline: 'SCAM ALERT: OxyCapitals, MirrorExp, TruCopy, BridgeStocks & More Cryptocurrency Fraud Exposed - $150,200+ Stolen',
+      description: 'Complete investigation exposing 6 cryptocurrency scam operations, including blockchain transaction analysis, wallet addresses, typosquatting tactics, Discord impersonation, and money laundering evidence.',
+      image: 'https://dirtycrypto.org/evidence/scam%20homepage.jpg',
       author: { '@id': 'https://dirtycrypto.org/#organization' },
       publisher: { '@id': 'https://dirtycrypto.org/#organization' },
       datePublished: '2026-02-01',
-      dateModified: '2026-02-04',
+      dateModified: '2026-02-05',
       mainEntityOfPage: { '@id': 'https://dirtycrypto.org/#webpage' },
       articleSection: ['Scam Alert', 'Cryptocurrency Fraud', 'Blockchain Analysis'],
-      keywords: 'oxycapitals scam, mirrorexp scam, crypto scam, phishing, impersonation scam, bitcoin fraud, cryptocurrency fraud, typosquatting, discord scam',
-      wordCount: 5000,
+      keywords: 'oxycapitals scam, mirrorexp scam, trucopy scam, bridgestocks scam, everrextrade scam, affluenceaura scam, crypto scam, phishing, impersonation scam, bitcoin fraud, cryptocurrency fraud, typosquatting, discord scam',
+      wordCount: 8000,
       speakable: {
         '@type': 'SpeakableSpecification',
         cssSelector: ['h1', 'h2', '.warning-pulse'],
@@ -366,7 +379,7 @@ const jsonLd = {
           name: 'How much money has been stolen by these crypto scams?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Based on blockchain analysis: OxyCapitals has stolen $54,000+ across Bitcoin, Ethereum, and Tron. MirrorExp has stolen $30,000+ primarily in Bitcoin. TruCopy has stolen $30,869+ across Bitcoin, Solana, and Ethereum. Combined documented losses exceed $114,800. Actual losses are likely higher as many victims do not report and some transactions may not be captured in our analysis.',
+            text: 'Based on blockchain analysis: OxyCapitals has stolen $40,400+ across Bitcoin, Ethereum, and Tron. MirrorExp has stolen $22,000+ primarily in Bitcoin. TruCopy has stolen $30,869+ across Bitcoin, Solana, and Ethereum. BridgeStocks stole $35,389 in Bitcoin before being taken down. Combined documented losses exceed $150,200 across 6 scam operations. Actual losses are likely higher as many victims do not report and some transactions may not be captured in our analysis.',
           },
         },
         {
@@ -449,9 +462,9 @@ export default function RootLayout({
         
         {/* DNS prefetch for external resources */}
         <link rel="dns-prefetch" href="https://www.google-analytics.com" />
-        
-        {/* Canonical - explicit for SEO */}
-        <link rel="canonical" href="https://dirtycrypto.org" />
+
+        {/* Web Manifest */}
+        <link rel="manifest" href="/manifest.json" />
         
         {/* Language alternatives (for future expansion) */}
         <link rel="alternate" hrefLang="en" href="https://dirtycrypto.org" />

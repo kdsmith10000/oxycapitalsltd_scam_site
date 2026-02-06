@@ -55,6 +55,14 @@ const bridgeStocksJsonLd = {
   '@context': 'https://schema.org',
   '@graph': [
     {
+      '@type': 'BreadcrumbList',
+      '@id': `${baseUrl}/bridgestocks#breadcrumb`,
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Dirty Crypto', item: baseUrl },
+        { '@type': 'ListItem', position: 2, name: 'BridgeStocks Scam Investigation', item: `${baseUrl}/bridgestocks` },
+      ],
+    },
+    {
       '@type': 'Article',
       '@id': `${baseUrl}/bridgestocks#article`,
       headline: 'BridgeStocks Scam Exposed - $35,389 Stolen via Discord Impersonation',

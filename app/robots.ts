@@ -8,21 +8,19 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: '*',
         allow: '/',
-        disallow: ['/api/', '/_next/'],
+        disallow: ['/api/', '/_next/', '/db/'],
       },
       {
         userAgent: 'Googlebot',
         allow: '/',
-        crawlDelay: 1,
       },
       {
         userAgent: 'Googlebot-Image',
-        allow: '/evidence/',
+        allow: ['/evidence/', '/apple-touch-icon.png', '/favicon-32x32.png'],
       },
       {
         userAgent: 'Bingbot',
         allow: '/',
-        crawlDelay: 1,
       },
       {
         userAgent: 'DuckDuckBot',

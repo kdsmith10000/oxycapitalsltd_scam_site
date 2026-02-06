@@ -47,6 +47,14 @@ const affluenceAuraJsonLd = {
   '@context': 'https://schema.org',
   '@graph': [
     {
+      '@type': 'BreadcrumbList',
+      '@id': `${baseUrl}/affluenceaura#breadcrumb`,
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Dirty Crypto', item: baseUrl },
+        { '@type': 'ListItem', position: 2, name: 'AffluenceAura Scam Investigation', item: `${baseUrl}/affluenceaura` },
+      ],
+    },
+    {
       '@type': 'Article',
       '@id': `${baseUrl}/affluenceaura#article`,
       headline: 'AffluenceAura Scam Exposed - Abandoned Fake Crypto Investment Platform',
