@@ -1251,6 +1251,265 @@ export default function BridgeStocksPage() {
         </div>
       </section>
 
+      {/* Actionable Intelligence for Law Enforcement */}
+      <section className="py-8 sm:py-12 px-4 border-b border-gray-800 bg-gradient-to-b from-blue-950/40 to-transparent">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-8">
+            <span className="inline-block px-4 py-2 bg-blue-600 text-white font-bold rounded-full text-sm uppercase tracking-wider mb-4">For Law Enforcement</span>
+            <h2 className="text-xl sm:text-2xl font-bold mb-2">Actionable Intelligence Summary</h2>
+            <p className="text-gray-400 text-sm">All subpoenable leads consolidated — each item traces back to a real-world identity</p>
+          </div>
+
+          {/* Lead 1: Discord */}
+          <div className="card p-5 rounded-xl border-2 border-blue-500 bg-blue-950/30 mb-4">
+            <div className="flex items-start gap-4">
+              <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                <span className="text-lg font-bold text-white">1</span>
+              </div>
+              <div className="flex-1">
+                <h4 className="text-blue-400 font-semibold mb-1 flex items-center gap-2">
+                  Subpoena Discord for Scammer Account
+                  <span className="px-2 py-0.5 bg-red-600/30 text-red-400 text-xs rounded">HIGH PRIORITY</span>
+                </h4>
+                <div className="bg-black/40 rounded-lg p-3 mb-2">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
+                    <div>
+                      <p className="text-gray-500 text-xs">Scammer Username</p>
+                      <p className="text-red-400 font-mono font-bold">sa1ma0gs</p>
+                    </div>
+                    <div>
+                      <p className="text-gray-500 text-xs">Impersonating</p>
+                      <p className="text-green-400 font-mono">salmaogs (real admin)</p>
+                    </div>
+                  </div>
+                </div>
+                <p className="text-gray-400 text-sm">
+                  Discord maintains <strong className="text-blue-300">account registration records</strong> including email address, phone number, 
+                  IP addresses at registration and login, payment methods (if Nitro), and device fingerprints. 
+                  A subpoena to Discord Inc. for the account <code className="bg-black/30 px-1 rounded text-red-300">sa1ma0gs</code> will yield 
+                  the scammer&apos;s real contact information and login history.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Lead 2: Cash-Out Wallets */}
+          <div className="card p-5 rounded-xl border-2 border-blue-500 bg-blue-950/30 mb-4">
+            <div className="flex items-start gap-4">
+              <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                <span className="text-lg font-bold text-white">2</span>
+              </div>
+              <div className="flex-1">
+                <h4 className="text-blue-400 font-semibold mb-1 flex items-center gap-2">
+                  Trace Cash-Out Wallets to Exchanges
+                  <span className="px-2 py-0.5 bg-red-600/30 text-red-400 text-xs rounded">HIGH PRIORITY</span>
+                </h4>
+                <div className="bg-black/40 rounded-lg p-3 mb-2">
+                  <div className="space-y-2">
+                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
+                      <code className="text-red-300 text-xs break-all">1JJYi2dhGzQb1Uy3Tqsme3yvh51V5gXZFc</code>
+                      <span className="text-red-400 font-bold text-sm">$27,962 (89.8%)</span>
+                    </div>
+                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
+                      <code className="text-yellow-300 text-xs break-all">1PPhvP9nNx6P6gVxW6X5StCcvP9xqk63Kp</code>
+                      <span className="text-yellow-400 font-bold text-sm">$2,539 (8.2%)</span>
+                    </div>
+                  </div>
+                </div>
+                <p className="text-gray-400 text-sm">
+                  These are the scammer&apos;s <strong className="text-blue-300">personal cash-out wallets</strong> (95%+ confidence). 
+                  Follow their outbound transactions to identify which <strong className="text-blue-300">cryptocurrency exchange</strong> the scammer 
+                  uses to convert BTC to fiat. That exchange can then be subpoenaed for <strong className="text-blue-300">KYC records</strong> — 
+                  government ID, selfie verification, bank account details, and withdrawal history.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Lead 3: Namecheap */}
+          <div className="card p-5 rounded-xl border-2 border-blue-500 bg-blue-950/30 mb-4">
+            <div className="flex items-start gap-4">
+              <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                <span className="text-lg font-bold text-white">3</span>
+              </div>
+              <div className="flex-1">
+                <h4 className="text-blue-400 font-semibold mb-1 flex items-center gap-2">
+                  Subpoena Namecheap for Registrant Identity
+                  <span className="px-2 py-0.5 bg-yellow-600/30 text-yellow-400 text-xs rounded">MEDIUM PRIORITY</span>
+                </h4>
+                <div className="bg-black/40 rounded-lg p-3 mb-2">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
+                    <div>
+                      <p className="text-gray-500 text-xs">Registrar</p>
+                      <p className="text-gray-300 font-semibold">Namecheap Inc (IANA ID: 1068)</p>
+                    </div>
+                    <div>
+                      <p className="text-gray-500 text-xs">Domain</p>
+                      <p className="text-red-400 font-mono">BRIDGESTOCKS.COM</p>
+                    </div>
+                    <div>
+                      <p className="text-gray-500 text-xs">Abuse Contact</p>
+                      <p className="text-gray-300">abuse@namecheap.com</p>
+                    </div>
+                    <div>
+                      <p className="text-gray-500 text-xs">Status</p>
+                      <p className="text-red-400 font-semibold">clientHold (Suspended)</p>
+                    </div>
+                  </div>
+                </div>
+                <p className="text-gray-400 text-sm">
+                  The WHOIS is hidden behind <strong className="text-blue-300">Withheld for Privacy ehf</strong>, but Namecheap retains the 
+                  <strong className="text-blue-300"> real registrant data</strong> behind the privacy shield. A subpoena to Namecheap Inc. 
+                  will reveal the true registrant&apos;s name, email, payment method used to purchase the domain, IP address at registration, 
+                  and any associated accounts. The domain is already on <code className="bg-red-900/30 px-1 rounded text-red-300">clientHold</code> — 
+                  Namecheap is aware this domain was used for fraud.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Lead 4: Exchange Hot Wallets */}
+          <div className="card p-5 rounded-xl border-2 border-blue-500 bg-blue-950/30 mb-4">
+            <div className="flex items-start gap-4">
+              <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                <span className="text-lg font-bold text-white">4</span>
+              </div>
+              <div className="flex-1">
+                <h4 className="text-blue-400 font-semibold mb-1 flex items-center gap-2">
+                  Identify Victim Exchanges via Hot Wallet Sources
+                  <span className="px-2 py-0.5 bg-yellow-600/30 text-yellow-400 text-xs rounded">MEDIUM PRIORITY</span>
+                </h4>
+                <div className="bg-black/40 rounded-lg p-3 mb-2">
+                  <div className="space-y-2 text-sm">
+                    <div>
+                      <p className="text-gray-500 text-xs">Source #1 (13-178 BTC balance, batched outputs)</p>
+                      <code className="text-blue-300 text-xs break-all">bc1qwelntg7tpxwgmh7gea0kycclx87mksnvhaadgf</code>
+                    </div>
+                    <div>
+                      <p className="text-gray-500 text-xs">Source #2 (3-66 BTC balance, batched outputs)</p>
+                      <code className="text-blue-300 text-xs break-all">bc1q4vxcxw7mpg9dcryqu0kav8awrn7qk5e6wgs3hg</code>
+                    </div>
+                  </div>
+                </div>
+                <p className="text-gray-400 text-sm">
+                  These source wallets exhibit <strong className="text-blue-300">exchange hot wallet behavior</strong> (large balances, batched multi-recipient transactions). 
+                  Identifying which exchange operates these wallets allows law enforcement to request withdrawal records — 
+                  revealing which <strong className="text-blue-300">KYC-verified accounts</strong> initiated transfers to the scam wallet, 
+                  including timestamps that correlate with the scammer&apos;s Discord activity.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Lead 5: Behavioral Evidence */}
+          <div className="card p-5 rounded-xl border-2 border-blue-500 bg-blue-950/30 mb-4">
+            <div className="flex items-start gap-4">
+              <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                <span className="text-lg font-bold text-white">5</span>
+              </div>
+              <div className="flex-1">
+                <h4 className="text-blue-400 font-semibold mb-1 flex items-center gap-2">
+                  Behavioral Evidence of Consciousness of Guilt
+                  <span className="px-2 py-0.5 bg-green-600/30 text-green-400 text-xs rounded">SUPPORTING EVIDENCE</span>
+                </h4>
+                <p className="text-gray-400 text-sm">
+                  Statistical analysis (chi-squared, p &lt; 0.001) proves the scammer <strong className="text-blue-300">changed their behavior</strong> after 
+                  the Chainabuse report was filed on November 7, 2025:
+                </p>
+                <ul className="text-gray-400 text-sm mt-2 space-y-1 ml-4">
+                  <li>&bull; Average deposit size dropped <strong className="text-red-300">93%</strong> (from $2,790 to $180)</li>
+                  <li>&bull; Cash-outs split across <strong className="text-red-300">two wallets instead of one</strong> — evasion tactic</li>
+                  <li>&bull; Switched from immediate large sweeps to <strong className="text-red-300">small regular drains every 1-3 days</strong></li>
+                  <li>&bull; Domain allowed to expire without renewal — <strong className="text-red-300">abandoning the scam front</strong></li>
+                  <li>&bull; Wallet continued receiving funds <strong className="text-red-300">10 days after domain expired</strong></li>
+                </ul>
+                <p className="text-gray-400 text-sm mt-2">
+                  This behavioral adaptation demonstrates <strong className="text-blue-300">awareness of wrongdoing</strong> and active steps to evade detection — 
+                  strong evidence of <strong className="text-blue-300">intent</strong> in a fraud prosecution.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Lead 6: Cross-Scam Pattern */}
+          <div className="card p-5 rounded-xl border-2 border-blue-500 bg-blue-950/30 mb-4">
+            <div className="flex items-start gap-4">
+              <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                <span className="text-lg font-bold text-white">6</span>
+              </div>
+              <div className="flex-1">
+                <h4 className="text-blue-400 font-semibold mb-1 flex items-center gap-2">
+                  Cross-Reference with Related Scam Operations
+                  <span className="px-2 py-0.5 bg-green-600/30 text-green-400 text-xs rounded">SUPPORTING EVIDENCE</span>
+                </h4>
+                <p className="text-gray-400 text-sm">
+                  BridgeStocks shares an <strong className="text-blue-300">identical operational pattern</strong> with at least 4 other documented scams 
+                  (MirrorExp, TruCopy, EverrexTrade, AffluenceAura) — all using Discord admin impersonation, typosquatting, and fake trading platforms. 
+                  While wallet addresses are siloed per campaign (OpSec technique), cross-referencing Discord account metadata, 
+                  Namecheap registration payment methods, and exchange KYC data across these scams may reveal a 
+                  <strong className="text-blue-300">single operator or organized group</strong>.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Summary Box */}
+          <div className="card p-6 rounded-xl bg-green-950/30 border-2 border-green-600 mt-6">
+            <h4 className="text-green-400 font-semibold mb-3 flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              Recommended Subpoena Targets (In Order)
+            </h4>
+            <div className="space-y-3 text-sm">
+              <div className="flex items-start gap-3">
+                <span className="text-green-400 font-bold">1.</span>
+                <p className="text-gray-300">
+                  <strong className="text-green-300">Discord Inc.</strong> — Account records for username 
+                  <code className="text-xs bg-black/30 px-1 rounded mx-1">sa1ma0gs</code> including email, phone, IP logs, and linked payment methods
+                </p>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="text-green-400 font-bold">2.</span>
+                <p className="text-gray-300">
+                  <strong className="text-green-300">Blockchain analytics</strong> — Trace outbound transactions from 
+                  <code className="text-xs bg-black/30 px-1 rounded mx-1">1JJY...ZFc</code> and 
+                  <code className="text-xs bg-black/30 px-1 rounded mx-1">1PPh...3Kp</code> to identify the exchange(s) used for liquidation
+                </p>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="text-green-400 font-bold">3.</span>
+                <p className="text-gray-300">
+                  <strong className="text-green-300">Identified exchange(s)</strong> — KYC records for the account(s) receiving funds from 
+                  the cash-out wallets, including government ID, bank withdrawal records, and IP addresses
+                </p>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="text-green-400 font-bold">4.</span>
+                <p className="text-gray-300">
+                  <strong className="text-green-300">Namecheap Inc.</strong> — True registrant data behind WHOIS privacy for 
+                  <code className="text-xs bg-black/30 px-1 rounded mx-1">BRIDGESTOCKS.COM</code>, including payment method and registration IP
+                </p>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="text-green-400 font-bold">5.</span>
+                <p className="text-gray-300">
+                  <strong className="text-green-300">Cross-reference all leads</strong> — If the same email, phone, IP, or payment method 
+                  appears across Discord, Namecheap, and exchange records, this conclusively identifies the scammer
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-6 card p-4 rounded-xl bg-yellow-950/20 border border-yellow-700/50">
+            <p className="text-yellow-400 text-sm text-center">
+              <strong>Note:</strong> All blockchain data referenced in this investigation is publicly verifiable on the Bitcoin blockchain. 
+              Transaction hashes, wallet addresses, and timestamps can be independently confirmed by any party using a blockchain explorer.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <RelatedScams exclude="bridgestocks" />
 
       <WhatToDo />
