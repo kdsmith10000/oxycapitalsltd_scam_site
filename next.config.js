@@ -1,9 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
-  images: {
-    unoptimized: true,
-  },
+  // Removed 'output: export' to allow API routes to work on Vercel
+  // This allows the tips form to function properly
 }
 
 module.exports = nextConfig
