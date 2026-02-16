@@ -47,16 +47,16 @@ export default function MirrorExpPage() {
         </div>
       </section>
 
-      {/* Site Taken Down Banner */}
-      <section className="py-4 px-4 border-b border-gray-800 bg-gradient-to-r from-green-950/50 to-emerald-950/50">
+      {/* Back Online / Investigating Banner */}
+      <section className="py-4 px-4 border-b border-gray-800 bg-gradient-to-r from-yellow-950/50 to-orange-950/50">
         <div className="max-w-4xl mx-auto">
           <div className="flex items-center justify-center gap-3">
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-green-400 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-yellow-400 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
             <div className="text-center">
-              <p className="text-green-400 font-semibold">Site Taken Down</p>
-              <p className="text-gray-400 text-sm">This scam website has been removed from the internet. The domain is still registered (expires Dec 2026) but hosting was terminated.</p>
+              <p className="text-yellow-400 font-semibold">Back Online - Under Investigation</p>
+              <p className="text-gray-400 text-sm">This scam website is back online. We continue to investigate and document its operations. The domain was briefly taken down in Feb 2026 but has returned.</p>
             </div>
           </div>
         </div>
@@ -70,7 +70,7 @@ export default function MirrorExpPage() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
             </svg>
             <p className="text-purple-300 text-sm">
-              <strong>Linked Operation:</strong> This domain was taken down on the same day as OxyCapitals (oxycapitalsltd.com). Both domains were updated on Feb 7, 2026 and expire within 9 days of each other — strong evidence the same operator owned both websites.
+              <strong>Linked Operation:</strong> This domain was taken down on the same day as OxyCapitals (oxycapitalsltd.com) on Feb 7, 2026. Both domains were updated on Feb 7, 2026 and expire within 9 days of each other — strong evidence the same operator owned both websites.
             </p>
           </div>
         </div>
