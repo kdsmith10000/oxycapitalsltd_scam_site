@@ -88,13 +88,15 @@ export default function OxyCapitalsPage() {
               <div className="bg-red-900/30 p-3 text-center">
                 <span className="text-red-400 font-bold uppercase text-sm">OxyCapitals WHOIS</span>
               </div>
-              <img 
-                src="/evidence/oxycapitals-whois.png" 
-                alt="WHOIS lookup for oxycapitalsltd.com showing updated date Feb 7, 2026" 
-                className="w-full evidence-img cursor-zoom-in" 
-                loading="lazy"
-                onClick={() => openLightbox('/evidence/oxycapitals-whois.png')}
-              />
+              <div className="overflow-y-auto max-h-[500px]">
+                <img 
+                  src="/evidence/oxycapitals-whois.png" 
+                  alt="WHOIS lookup for oxycapitalsltd.com showing updated date Feb 7, 2026" 
+                  className="w-full h-auto"
+                  loading="lazy"
+                  onClick={() => openLightbox('/evidence/oxycapitals-whois.png')}
+                />
+              </div>
             </div>
             
             {/* MirrorExp WHOIS */}
@@ -102,13 +104,15 @@ export default function OxyCapitalsPage() {
               <div className="bg-orange-900/30 p-3 text-center">
                 <span className="text-orange-400 font-bold uppercase text-sm">MirrorExp WHOIS</span>
               </div>
-              <img 
-                src="/evidence/mirrorexp-whois.png" 
-                alt="WHOIS lookup for mirrorexp.com showing updated date Feb 7, 2026" 
-                className="w-full evidence-img cursor-zoom-in" 
-                loading="lazy"
-                onClick={() => openLightbox('/evidence/mirrorexp-whois.png')}
-              />
+              <div className="overflow-y-auto max-h-[500px]">
+                <img 
+                  src="/evidence/mirrorexp-whois.png" 
+                  alt="WHOIS lookup for mirrorexp.com showing updated date Feb 7, 2026" 
+                  className="w-full h-auto"
+                  loading="lazy"
+                  onClick={() => openLightbox('/evidence/mirrorexp-whois.png')}
+                />
+              </div>
             </div>
           </div>
           
