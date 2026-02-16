@@ -33,10 +33,18 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Right - Tagline */}
-          <div className="text-right">
-            <span className="text-red-500 font-bold text-xs sm:text-sm uppercase tracking-wider whitespace-nowrap hidden sm:inline">Scam Exposure Network</span>
-            <span className="text-red-500 font-bold text-xs uppercase tracking-wider sm:hidden">Scam Alert</span>
+          {/* Right - Tagline & Tips Button */}
+          <div className="text-right flex items-center justify-end gap-3">
+            <Link 
+              href="/tips" 
+              className="flex items-center gap-2 px-3 py-1.5 bg-yellow-600 hover:bg-yellow-500 text-white text-xs font-semibold rounded-lg transition-colors"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
+              </svg>
+              <span className="hidden sm:inline">Submit Tip</span>
+              <span className="sm:hidden">Tips</span>
+            </Link>
           </div>
         </div>
       </nav>
