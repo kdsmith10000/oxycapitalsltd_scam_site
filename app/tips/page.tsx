@@ -17,6 +17,8 @@ export default function TipsPage() {
   })
 
   const [submitted, setSubmitted] = useState(false)
+  const [isLoading, setIsLoading] = useState(false)
+  const [error, setError] = useState('')
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData(prev => ({
@@ -25,26 +27,32 @@ export default function TipsPage() {
     }))
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
+    setIsLoading(true)
+    setError('')
     
-    const subject = encodeURIComponent(`Crypto Scam Tip: ${formData.tipType || 'General'}`)
-    const body = encodeURIComponent(
-      `=== Crypto Scam Tip Submission ===\n\n` +
-      `TIP TYPE:\n${formData.tipType}\n\n` +
-      `SUSPECTED WEBSITE:\n${formData.suspectWebsite}\n\n` +
-      `SUSPECTED DISCORD USERNAME:\n${formData.suspectDiscord}\n\n` +
-      `SUSPECTED EMAIL:\n${formData.suspectEmail}\n\n` +
-      `SUSPECTED WALLET ADDRESS(ES):\n${formData.suspectWallet}\n\n` +
-      `APPROXIMATE AMOUNT LOST (if known):\n${formData.amountLost}\n\n` +
-      `DETAILED DESCRIPTION:\n${formData.description}\n\n` +
-      `YOUR CONTACT EMAIL (optional):\n${formData.contactEmail}\n\n` +
-      `ADDITIONAL INFORMATION:\n${formData.additionalInfo}\n\n` +
-      `--- Submitted via Dirty Crypto Tips Form ---`
-    )
-    
-    window.location.href = `mailto:tips@dirtycrypto.org?subject=${subject}&body=${body}`
-    setSubmitted(true)
+    try {
+      const response = await fetch('/api/tips', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      })
+
+      const result = await response.json()
+
+      if (response.ok) {
+        setSubmitted(true)
+      } else {
+        setError(result.message || result.error || 'Failed to submit tip. Please try again.')
+      }
+    } catch (err) {
+      setError('An error occurred. Please try again.')
+    } finally {
+      setIsLoading(false)
+    }
   }
 
   return (
@@ -89,11 +97,10 @@ export default function TipsPage() {
               </div>
               <h2 className="text-2xl font-bold text-green-400 mb-2">Thank You for Your Tip!</h2>
               <p className="text-gray-300 mb-4">
-                Your email client should have opened with the tip information pre-filled. Please send the email to complete your submission.
+                Your tip has been submitted successfully. Our team will review the information and take appropriate action.
               </p>
               <p className="text-gray-400 text-sm mb-6">
-                If your email client didn't open, please manually send your tip to{' '}
-                <a href="mailto:tips@dirtycrypto.org" className="text-yellow-400 hover:underline">tips@dirtycrypto.org</a>
+                If you provided contact information, we may reach out for additional details.
               </p>
               <Link 
                 href="/" 
@@ -260,19 +267,39 @@ export default function TipsPage() {
                   />
                 </div>
 
+                {/* Error Message */}
+                {error && (
+                  <div className="mb-4 p-4 rounded-lg bg-red-900/30 border border-red-600">
+                    <p className="text-red-400 text-sm">{error}</p>
+                  </div>
+                )}
+
                 {/* Submit Button */}
                 <div className="pt-4">
                   <button
                     type="submit"
-                    className="w-full py-4 px-6 bg-yellow-600 hover:bg-yellow-500 text-white font-bold rounded-lg transition-colors flex items-center justify-center gap-3"
+                    disabled={isLoading}
+                    className="w-full py-4 px-6 bg-yellow-600 hover:bg-yellow-500 disabled:bg-yellow-800 disabled:cursor-not-allowed text-white font-bold rounded-lg transition-colors flex items-center justify-center gap-3"
                   >
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                    </svg>
-                    Submit Tip via Email
+                    {isLoading ? (
+                      <>
+                        <svg className="animate-spin h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                          <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                          <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                        </svg>
+                        Submitting...
+                      </>
+                    ) : (
+                      <>
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+                        </svg>
+                        Submit Tip
+                      </>
+                    )}
                   </button>
                   <p className="text-gray-500 text-xs text-center mt-3">
-                    Clicking submit will open your email client with the tip pre-filled. Your information is kept confidential.
+                    Your tip will be sent directly to our team. No email client required.
                   </p>
                 </div>
               </div>
