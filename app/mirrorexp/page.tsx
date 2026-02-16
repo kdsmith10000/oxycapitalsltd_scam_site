@@ -47,6 +47,90 @@ export default function MirrorExpPage() {
         </div>
       </section>
 
+      {/* Site Taken Down Banner */}
+      <section className="py-4 px-4 border-b border-gray-800 bg-gradient-to-r from-green-950/50 to-emerald-950/50">
+        <div className="max-w-4xl mx-auto">
+          <div className="flex items-center justify-center gap-3">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-green-400 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <div className="text-center">
+              <p className="text-green-400 font-semibold">Site Taken Down</p>
+              <p className="text-gray-400 text-sm">This scam website has been removed from the internet. The domain is still registered (expires Dec 2026) but hosting was terminated.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Linked to OxyCapitals Banner */}
+      <section className="py-3 px-4 border-b border-gray-800 bg-purple-950/30">
+        <div className="max-w-4xl mx-auto">
+          <div className="flex items-center justify-center gap-3">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-purple-400 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+            </svg>
+            <p className="text-purple-300 text-sm">
+              <strong>Linked Operation:</strong> This domain was taken down on the same day as OxyCapitals (oxycapitalsltd.com). Both domains were updated on Feb 7, 2026 and expire within 9 days of each other — strong evidence these are the same scam operation.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* WHOIS Evidence - Same Day Takedown */}
+      <section className="py-8 px-4 border-b border-gray-800 bg-gray-900/30">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-xl sm:text-2xl font-bold text-center mb-2">WHOIS Evidence: Same Day Takedown</h2>
+          <p className="text-center text-gray-400 mb-6 text-sm sm:text-base">Both MirrorExp and OxyCapitals were updated on February 7, 2026 — the day they were taken offline</p>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
+            {/* MirrorExp WHOIS */}
+            <div className="card rounded-xl overflow-hidden border-2 border-orange-600">
+              <div className="bg-orange-900/30 p-3 text-center">
+                <span className="text-orange-400 font-bold uppercase text-sm">MirrorExp WHOIS</span>
+              </div>
+              <img 
+                src="/evidence/mirrorexp-whois.png" 
+                alt="WHOIS lookup for mirrorexp.com showing updated date Feb 7, 2026" 
+                className="w-full evidence-img cursor-zoom-in" 
+                loading="lazy"
+                onClick={() => openLightbox('/evidence/mirrorexp-whois.png')}
+              />
+            </div>
+            
+            {/* OxyCapitals WHOIS */}
+            <div className="card rounded-xl overflow-hidden border-2 border-red-600">
+              <div className="bg-red-900/30 p-3 text-center">
+                <span className="text-red-400 font-bold uppercase text-sm">OxyCapitals WHOIS</span>
+              </div>
+              <img 
+                src="/evidence/oxycapitals-whois.png" 
+                alt="WHOIS lookup for oxycapitalsltd.com showing updated date Feb 7, 2026" 
+                className="w-full evidence-img cursor-zoom-in" 
+                loading="lazy"
+                onClick={() => openLightbox('/evidence/oxycapitals-whois.png')}
+              />
+            </div>
+          </div>
+          
+          <div className="mt-6 card p-4 rounded-xl bg-purple-950/20 border border-purple-700/50">
+            <h4 className="text-purple-400 font-semibold mb-2 text-center">Key Finding: Same Operator</h4>
+            <div className="grid grid-cols-2 gap-4 text-sm">
+              <div className="text-center">
+                <p className="text-gray-500 text-xs mb-1">MirrorExp</p>
+                <p className="text-gray-300">Registrar: NameSilo<br/>Nameservers: Cloudflare</p>
+              </div>
+              <div className="text-center">
+                <p className="text-gray-500 text-xs mb-1">OxyCapitals</p>
+                <p className="text-gray-300">Registrar: GoDaddy<br/>Nameservers: domain_principal.net</p>
+              </div>
+            </div>
+            <p className="text-purple-300 text-center mt-3 text-sm">
+              <strong>Different infrastructure but same takedown date</strong> — strong evidence these are the same scam operation, possibly using different hosting to avoid detection.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Fun Cartoon Section */}
       <section className="py-8 px-4 border-b border-gray-800 bg-gradient-to-b from-purple-950/20 to-transparent">
         <div className="max-w-2xl mx-auto text-center">
