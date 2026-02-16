@@ -106,7 +106,7 @@ export default function TipsPage() {
               </Link>
             </div>
           ) : (
-            <form onSubmit={handleSubmit} className="card p-6 sm:p-8 rounded-2xl border border-gray-700 bg-gray-900/30">
+            <form onSubmit={handleSubmit} noValidate className="card p-6 sm:p-8 rounded-2xl border border-gray-700 bg-gray-900/30">
               <div className="space-y-6">
                 {/* Tip Type */}
                 <div>
