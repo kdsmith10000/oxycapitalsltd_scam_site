@@ -70,7 +70,7 @@ export default function MirrorExpPage() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
             </svg>
             <p className="text-purple-300 text-sm">
-              <strong>Linked Operation:</strong> This domain was taken down on the same day as OxyCapitals (oxycapitalsltd.com). Both domains were updated on Feb 7, 2026 and expire within 9 days of each other — strong evidence these are the same scam operation.
+              <strong>Linked Operation:</strong> This domain was taken down on the same day as OxyCapitals (oxycapitalsltd.com). Both domains were updated on Feb 7, 2026 and expire within 9 days of each other — strong evidence the same operator owned both websites.
             </p>
           </div>
         </div>
@@ -129,7 +129,7 @@ export default function MirrorExpPage() {
               </div>
             </div>
             <p className="text-purple-300 text-center mt-3 text-sm">
-              <strong>Different infrastructure but same takedown date</strong> — strong evidence these are the same scam operation, possibly using different hosting to avoid detection.
+              <strong>Different infrastructure but same takedown date</strong> — strong evidence the same operator owned both websites, possibly using different hosting to avoid detection.
             </p>
           </div>
         </div>
