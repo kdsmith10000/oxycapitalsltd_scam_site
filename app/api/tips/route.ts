@@ -1,6 +1,5 @@
 import { NextResponse } from 'next/server';
 
-// Force dynamic rendering
 export const dynamic = 'force-dynamic';
 export const runtime = 'nodejs';
 
@@ -10,19 +9,7 @@ export async function GET() {
 
 export async function POST(request: Request) {
   try {
-    let body;
-    const contentType = request.headers.get('content-type');
-    
-    if (contentType?.includes('application/json')) {
-      body = await request.json();
-    } else {
-      const text = await request.text();
-      const params = new URLSearchParams(text);
-      body = {};
-      for (const [key, value] of params) {
-        body[key] = value;
-      }
-    }
+    const body = await request.json();
     
     const { tipType, suspectWebsite, suspectDiscord, suspectEmail, suspectWallet, amountLost, description, contactEmail, additionalInfo } = body;
 

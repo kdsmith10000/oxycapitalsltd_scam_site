@@ -286,43 +286,26 @@ export default function TruCopyPage() {
           </div>
 
           {/* UPDATE: Mixer/Chain-Hopping Alert */}
-          <div className="card p-6 rounded-xl mb-6 border-2 border-red-500 bg-red-950/30">
-            <h3 className="text-lg font-semibold mb-4 text-center text-red-400 flex items-center justify-center gap-2">
-              <span className="w-3 h-3 bg-red-400 rounded-full animate-pulse"></span>
-              UPDATE: Mixer/Laundering Pattern Detected
+          <div className="card p-4 rounded-xl mb-6 border border-gray-600 bg-gray-800/30">
+            <h3 className="text-base font-semibold mb-3 text-gray-300 flex items-center justify-center gap-2">
+              <span className="w-2 h-2 bg-gray-400 rounded-full"></span>
+              February 2026 Update
             </h3>
-            <div className="space-y-4 text-sm">
-              <p className="text-gray-300">
-                <strong className="text-yellow-400">February 2026 Update:</strong> The scam collection wallet has been linked to a high-volume consolidation wallet that appears to be used as a <strong className="text-red-400">mixer/chain-hopping service</strong> to mask the final deposit locations.
+            <div className="space-y-3 text-sm">
+              <p className="text-gray-400">
+                The scam collection wallet has been linked to a high-volume consolidation wallet that appears to be used to mask the final deposit locations.
               </p>
               
-              <div className="bg-black/40 rounded-lg p-4 border border-red-700">
-                <div className="text-gray-400 text-xs mb-2">LINKED MIXER WALLET</div>
-                <div className="text-red-400 break-all text-xs sm:text-sm font-mono">bc1per5zmcy6gvpzp73tffs6fjzjmd79r4c0pthymnwguz2ye43uc3mswumhm0</div>
-                <div className="text-gray-500 text-xs mt-2">
-                  Total Volume: <span className="text-red-400 font-semibold">$1.12M+</span> | 
-                  Transactions: <span className="text-red-400 font-semibold">462+</span> |
-                  Status: <span className="text-yellow-400 font-semibold">Nearly Zero Balance</span>
+              <div className="bg-black/30 rounded-lg p-3 border border-gray-700">
+                <div className="text-gray-500 text-xs mb-1">Linked Consolidation Wallet</div>
+                <div className="text-gray-300 break-all text-xs font-mono">bc1per5zmcy6gvpzp73tffs6fjzjmd79r4c0pthymnwguz2ye43uc3mswumhm0</div>
+                <div className="text-gray-500 text-xs mt-1">
+                  Volume: ~$1.12M | 462+ transactions | Nearly zero balance
                 </div>
               </div>
 
-              <div className="grid md:grid-cols-2 gap-3">
-                <div className="bg-purple-900/20 p-3 rounded-lg border border-purple-700/50">
-                  <h4 className="text-purple-400 font-semibold text-xs mb-1">Evidence of Connection</h4>
-                  <p className="text-gray-400 text-xs">
-                    TruCopy change addresses <code className="text-purple-300">bc1qn2cst...8j94g</code> and <code className="text-purple-300">bc1qhxqq...sdmre</code> appear in transactions from this wallet.
-                  </p>
-                </div>
-                <div className="bg-orange-900/20 p-3 rounded-lg border border-orange-700/50">
-                  <h4 className="text-orange-400 font-semibold text-xs mb-1">Mixer Behavior</h4>
-                  <p className="text-gray-400 text-xs">
-                    Wallet aggregates funds from multiple sources and sends to various destinations — classic mixer pattern to obscure final cash-out location.
-                  </p>
-                </div>
-              </div>
-
-              <p className="text-gray-400 text-xs">
-                <strong className="text-yellow-400">Implication:</strong> The scammer is using this wallet to obscure the trail between victim deposits and final exchange cash-out. This is an attempt to evade blockchain analysis and law enforcement tracing efforts.
+              <p className="text-gray-500 text-xs">
+                TruCopy change addresses appear in transactions from this wallet. This behavior suggests the scammer is attempting to obscure the trail between victim deposits and final exchange cash-out.
               </p>
             </div>
           </div>
