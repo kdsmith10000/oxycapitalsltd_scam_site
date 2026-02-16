@@ -41,11 +41,15 @@ export default function TipsPage() {
         body: JSON.stringify(formData),
       })
 
-      // Always show success to avoid user frustration
-      setSubmitted(true)
+      const data = await response.json()
+
+      if (response.ok && data.success) {
+        setSubmitted(true)
+      } else {
+        setError('There was an issue submitting your tip. Please try emailing tips@dirtycrypto.org directly.')
+      }
     } catch (err) {
-      // Even on network error, show success to avoid frustrating users
-      setSubmitted(true)
+      setError('Network error. Please try emailing tips@dirtycrypto.org directly.')
     } finally {
       setIsLoading(false)
     }
