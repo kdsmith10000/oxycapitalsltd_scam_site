@@ -89,7 +89,7 @@ const mirrorExpJsonLd = {
         url: baseUrl,
       },
       datePublished: '2026-02-02',
-      dateModified: '2026-02-04',
+      dateModified: '2026-02-17',
       mainEntityOfPage: `${baseUrl}/mirrorexp`,
       articleSection: ['Scam Alert', 'Typosquatting', 'Blockchain Analysis'],
       keywords: 'mirrorexp scam, typosquatting, discord impersonation, crypto fraud, bitcoin scam',

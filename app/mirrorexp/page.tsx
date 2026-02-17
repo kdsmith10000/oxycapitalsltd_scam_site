@@ -47,16 +47,16 @@ export default function MirrorExpPage() {
         </div>
       </section>
 
-      {/* Back Online / Investigating Banner */}
-      <section className="py-4 px-4 border-b border-gray-800 bg-gradient-to-r from-yellow-950/50 to-orange-950/50">
+      {/* Site Down Banner */}
+      <section className="py-4 px-4 border-b border-gray-800 bg-gradient-to-r from-green-950/50 to-emerald-950/50">
         <div className="max-w-4xl mx-auto">
           <div className="flex items-center justify-center gap-3">
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-yellow-400 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-green-400 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" />
             </svg>
             <div className="text-center">
-              <p className="text-yellow-400 font-semibold">Back Online - Under Investigation</p>
-              <p className="text-gray-400 text-sm">This scam website is back online. We continue to investigate and document its operations. The domain was briefly taken down in Feb 2026 but has returned.</p>
+              <p className="text-green-400 font-semibold">Site Down Again — Cloudflare Error 1000</p>
+              <p className="text-gray-400 text-sm">As of Feb 17, 2026, mirrorexp.com is offline again with Cloudflare Error 1000 (DNS points to prohibited IP). The domain was briefly back online but has been taken down once more. Ray ID: 9cf150a8ed71a3cb.</p>
             </div>
           </div>
         </div>

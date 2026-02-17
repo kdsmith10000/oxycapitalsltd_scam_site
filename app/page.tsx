@@ -286,8 +286,8 @@ export default function Home() {
                     <p className="text-gray-400 text-xs sm:text-sm truncate">mirrorexp.com</p>
                   </div>
                   <div className="flex-shrink-0">
-                    <span className="px-2 sm:px-3 py-1 bg-yellow-600/30 text-yellow-400 text-xs font-semibold rounded-full border border-yellow-600">
-                      ACTIVE
+                    <span className="px-2 sm:px-3 py-1 bg-green-600/30 text-green-400 text-xs font-semibold rounded-full border border-green-600">
+                      OFFLINE
                     </span>
                   </div>
                 </div>
@@ -314,7 +314,7 @@ export default function Home() {
                 </div>
                 
                 <div className="flex items-center justify-between gap-2">
-                  <p className="text-gray-500 text-xs sm:text-sm">Back online — linked to OxyCapitals (same operator)</p>
+                  <p className="text-gray-500 text-xs sm:text-sm">Site down again (Cloudflare Error 1000) — linked to OxyCapitals</p>
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-orange-400 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                   </svg>
